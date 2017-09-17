@@ -1,0 +1,84 @@
+/*=====================================================
+   Smart Phones And Taplets = Extra Small Screen[XS]
+  =====================================================*/
+
+@media (max-width: 767px) 
+{
+    
+.header .overlay{ padding-top: 30px; padding-bottom: 30px}    
+.header .overlay h1~.lead{margin-bottom: 5px;font-size: 18px}
+.header .overlay hr{margin: 0}
+.header .overlay p{padding: 8px 0 0 0; margin-bottom: 0}
+.header .overlay button{margin-top: 10px}
+    
+.social i{font-size: 25px; margin-bottom: 15px;}
+
+.taps-sec ul li{
+    float: left;
+    width: 30%;
+    height: 60px;
+    background: #333;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 8px;
+    font-size: 18px;
+    border-right: 1px solid #FFF;
+    margin-bottom: 20px
+}
+.taps-sec .taps-content {margin-bottom: 20px; }
+.taps-sec .taps-content p{font-size: 15px}
+
+    
+    .pricing-section .price-option {margin-bottom: 25px}
+    
+}
+
+
+
+/*=====================================================
+           Small Screens[SM]
+  =====================================================*/
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+
+    .taps-sec ul li{
+    float: left;
+    width: 30%;
+    height: 60px;
+    background: #333;
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 60px;
+    border-right: 1px solid #FFF;
+    margin-bottom: 20px
+}
+   
+    
+    
+}
+
+
+/*=====================================================
+          Medium Screens[Md]
+  =====================================================*/
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
+    
+}
+
+
+/*=====================================================
+          Larg Screens[Lg]
+  =====================================================*/
+@media (min-width: 1200px)
+{
+
+    
+}
