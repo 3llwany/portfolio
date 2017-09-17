@@ -1,0 +1,70 @@
+
+
+/*==============================================
+            Start  Bread crumb
+=================================================*/
+
+.breadcrumb-map {background: #f5f5f5}
+.breadcrumb{margin-bottom: 0;padding: 10px 0;font-size: 15px}
+.breadcrumb .active{font-weight: bold}
+
+
+
+/*==============================================
+            End  Bread crumb
+=================================================*/
+
+
+
+
+
+
+
+
+
+
+
+/*==============================================
+            Start  About us Page
+=================================================*/
+.about-team{padding-top: 50px;padding-bottom: 70px;background: #DDD}
+.about-team h2{font-weight: bold;margin-bottom: 20px}
+
+
+/*========= Start About Features ======================*/
+.about-features{padding-top: 70px;padding-bottom: 50px;background: #CCC}
+.about-features h2{font-weight: bold}
+.about-features p{margin-bottom: 20px}
+
+/*========= End About Features ======================*/
+
+.team-leader{padding-top: 50px;padding-bottom: 50px}
+/*==============================================
+            End  AboutUs Page
+=================================================*/
+
+
+
+
+
+
+
+
+
+/*==============================================
+            Start FAQ Page
+=================================================*/
+
+.question {padding-top: 50px;padding-bottom: 50px}
+
+.question .panel-heading a:after{
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+}
+
+
+/*==============================================
+            End FAQ Page
+=================================================*/
+

@@ -1,0 +1,703 @@
+/*body{overflow: hidden}*/
+body{overflow-x: hidden;padding-top: 71px}
+/*--==============================================
+            Start  Option Box
+=================================================*/
+
+.option-box{
+    position: fixed;
+    top: 71px;
+    left: 0;
+    z-index: 9999;
+}
+.option-box .colors-box{
+    background:#111;
+/*  color: #FFF;*/
+/*  border: 2px solid #E41817;*/
+    padding: 10px;
+    float: left;
+    display: none
+
+}
+
+.option-box .colors-box ul li {
+    width: 15px;
+    height: 15px;
+/*    background: #FFF;*/
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 3px
+}
+
+.option-box .icon{
+    padding: 5px;
+/*    border: 2px solid #E41817;*/
+      background: #FFF;
+/*    color: #FFF;*/
+    cursor: pointer;
+}
+
+
+/*--==============================================
+            End  Option Box
+=================================================*/
+
+
+
+/*--==============================================
+            Start  NavBar
+=================================================*/
+
+
+/*  ============= NavBar Hight =========  */
+
+.navbar {
+    min-height: 70px;
+}
+
+
+/* =========  Active Link Background color========================== */
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+/*    background-color: #be1616 /*#2b6393*  */
+}
+
+
+/* ========= color Span in Brand  ============ */
+
+.navbar-inverse .navbar-brand {
+    font-size: 32px;
+    font-family: cursive;
+    color: #BBB;
+    line-height: 32px
+}
+
+.navbar-inverse .navbar-brand span {
+/*    color: #E41817*/
+}
+
+
+/* ======== navbar Button Toggole in mobile ========*/
+
+.navbar-toggle {
+    margin-top: 17px
+}
+
+
+/* =========  Links Color ======================*/
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #BBB;
+    font-size: 18px;
+    padding-top: 25px;
+    padding-bottom: 25px
+}
+
+
+/* ========= Dropdown mnue =============*/
+
+
+/*== Dropdown Background color ==*/
+
+.navbar-nav>li>.dropdown-menu {
+/*    background-color: #222;*/
+/*    border-top: 3px solid #E41817;*/
+    min-width: 170px;
+    left: 0;
+    right: auto;
+}
+
+
+/*== Dropdown links color ==*/
+
+.dropdown-menu>li>a {
+    color: #BBB;
+    -webkit-transition: padding .5s ease;
+    transition: padding .5s ease
+}
+
+
+/*== Dropdown links hover ==*/
+
+.dropdown-menu>li>a:hover {
+    background-color: #E41817;
+    color: #FFF;
+    padding-left: 28px
+}
+
+
+/*== Dropdown divider color ==*/
+
+.dropdown-menu .divider {
+/*    background-color: #be1616*/
+}
+
+
+/*--==============================================
+            End  NavBar
+=================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+    /*--==============================================
+            Start  Carousle
+=================================================*/
+.slider {
+/*  background: #9a9090*/
+}
+
+.slider .carousel-caption{
+    background: rgba(3,3,3,.4);
+    bottom:250px
+}
+
+.slider .carousel-caption h1{
+/*    color: #e00c0c;*/
+    font-weight: bold;font-family: Arial
+}
+
+.slider .carousel-indicators li{ 
+    width: 15px;
+    height: 15px;
+    border-color: #DDD
+}
+
+.slider .carousel-indicators .active{
+    width: 17px;
+    height: 17px;
+/*
+    background: #961e1e;
+    border: 1px solid #961e1e
+*/
+}
+
+.slider .item img{width: 100%;max-height: 100%}
+/*--==============================================
+            End  Carousle
+=================================================*/
+
+
+
+ /*--==============================================
+            Start  Features
+=================================================*/
+.features{
+/*
+    background: #111;
+    color: #FFF;
+*/
+    padding-top: 50px;padding-bottom: 50px;
+}
+.features h1{padding-bottom: 50px;}
+.features .feat span
+.features .feat{margin-bottom: 15px}
+.features .feat span.glyphicon{font-size: 50px}
+.features .feat span.glyphicon-thumbs-up,
+.features .feat1 span~h3{ color: #3570d0 }
+
+.features .feat span.glyphicon-heart,
+.features .feat2 span~h3{ color: #d11597 }
+
+.features .feat span.glyphicon-remove,
+.features .feat3 span~h3{ color: #860d0d }
+
+.features .feat span.glyphicon-ok,
+.features .feat4 span~h3{ color: #22a76f }
+
+ /*--==============================================
+            End  Features
+=================================================*/
+
+
+
+
+
+/*--==============================================
+            Start  Testimonials
+=================================================*/
+.testimonials{
+/*background: #9a9090;*/
+}
+.testimonials .container {
+    padding: 50px
+}
+
+.testimonials h1{margin-bottom: 50px}
+.testimonials  .carousel-indicators{
+    position: static;
+    padding-top: 15px;
+    width: 100%;
+    margin-left: auto;
+    
+
+}
+.testimonials  .carousel-indicators li {
+    border:2px solid #CCC;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: 0;
+    opacity:.4;
+}
+.testimonials  .carousel-indicators li img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.testimonials .carousel-indicators .active {
+    width: 40px;
+    height: 40px;
+    opacity: 1
+}
+
+
+.testimonials .carousel-inner > .item > img,
+.testimonials .carousel-inner > .item > a > img
+{
+    border-radius:50%;
+    max-width: 80px;
+    width: 80px;
+    max-height: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    padding:1.5px;
+    border: 1px solid #AAA;
+    background: #CCC;
+    -webkit-transition:all .3s ease;
+    -webkit-transition:;
+    transition: 
+}
+.testimonials .carousel-inner > .item > img:hover{
+    -webkit-transform: rotateX(180deg);
+    transform: rotate(360deg)
+}
+
+.testimonials .carousel-inner > .item > h3{
+    font-weight: bold;
+    color: #555
+}
+
+
+
+
+
+/*--==============================================
+            End  Testimonials
+=================================================*/
+
+
+
+
+
+
+
+
+/*--==============================================
+            Start Products Table
+=================================================*/
+
+.products {
+/*    background:#111;*/
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+.products h1{
+    margin-bottom: 40px;
+    font-weight: bold;
+/*    color: #E41817;*/
+}
+
+.products .prod{
+/*    background: #fff;*/
+    padding:10px;
+    margin-bottom: 20px
+}
+    
+.products .prod h3{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 5px
+}
+.products p{
+    color:#888;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    background: #ddd;
+    border-radius: 50%;
+    line-height: 70px;
+    -webkit-transition:all .5s;
+    transition:all .5s; 
+}
+.products .prod:hover p{
+     transform: scale(1.1) rotate(360deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+     -o-transform: scale(1.1) rotate(360deg);
+     -moz-transform: scale(1.1) rotate(360deg);
+    
+}
+.products .prod ul > li{
+    line-height: 200%   
+}
+
+
+/*--==============================================
+            End Products Table
+=================================================*/
+
+
+
+
+
+/*--==============================================
+            Start  Our Team
+=================================================*/
+.our-team{
+    background: url('../img/004A7764-Edit-2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.our-team .team{
+/*    color: #FFF;*/
+    background: rgba(3,3,3,.7);
+    padding-bottom: 30px
+}
+
+.our-team .team h1 {
+    padding: 50px;
+    font-weight:bold;
+    font-size: 50px
+}
+
+.our-team .team .person-info{
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.our-team .team .person-info img{
+    padding: 1px;
+    background: #DDD;
+    border: 2px solid #555
+}
+.our-team .team i {color:#DDD}
+/*--==============================================
+            End  Our Team
+=================================================*/
+
+
+
+
+
+
+
+/*--==============================================
+            Start Subscrib
+=================================================*/
+.subscrib{
+    padding-top: 40px;
+    padding-bottom: 80px;
+/*    background: #9a9090;*/
+}
+
+
+.subscrib h1{
+    
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+
+.form-inline .form-control{
+    border-radius: 0;
+}
+.btn-lg, .btn-group-lg > .btn{
+    border-radius: 0;
+    margin-left: -5px
+}/*--==============================================
+            End Subscrib
+=================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--==============================================
+            Start Statistics
+=================================================*/
+.statistics{
+    background: url('../img/contact.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.statistics .stati {
+    background: rgba(3,3,3,.7);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: #c3b8b8
+}
+
+.statistics .stati h1 {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.statistics .stati .info{transition: all .5s ease;margin-bottom: 20px}
+.statistics .stati .info p{font-size: 35px;margin-top: 5px;margin-bottom: 0;font-weight: bold}
+.statistics .stati .info:hover{color: #FFF}
+
+/*--==============================================
+            End Statistics
+=================================================*/
+
+
+
+
+
+
+
+/*--==============================================
+            Start Progress
+=================================================-*/
+.our-skills{
+    padding-bottom: 80px;padding-top: 50px;
+/*
+    background: #111;
+    color: #be1616
+*/
+}
+.our-skills h1{margin-bottom: 80px;font-weight: bold}
+.our-skills h2{margin-top: 0;font-weight: bold}
+.our-skills .progress { height: 30px;}
+.our-skills .progress-bar{
+    line-height: 30px;
+    font-size: 15px;
+    text-align: left;
+    text-indent: 10px;
+    font-weight: bold
+}
+
+    
+    
+    
+/*--==============================================
+            End Progress
+=================================================-*/
+
+
+
+
+
+
+/*--==============================================
+            Start Contact US
+=================================================-*/
+.contact-us {
+    background: url(../img/message.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.contact-us .contact{
+    background: rgba(3,3,3,.5);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    color: #FFF
+}
+.contact-us .contact h1{font-weight: bold}
+.contact-us .contact p{margin-bottom: 50px;}
+.contact-us .contact textarea{height: 125px;margin-bottom: 5px;max-height: 125px}
+.contact-us .contact input[type='text'],
+.contact-us .contact textarea{
+/*
+    background: rgba(3,3,3,.8);
+    color: #FFF;
+*/
+    border: none;
+
+}
+    
+/*--==============================================
+            End Contact US
+=================================================-*/
+
+
+/*--==============================================
+            Start Footer
+=================================================-*/
+footer{
+/*
+    background: #111;
+    color: #DDD;
+*/
+    padding-top: 50px
+}
+footer h1{
+    margin-bottom: 50px; font-weight: bold;
+/*    color:#be1616*/
+}
+footer ul {overflow: hidden;margin-bottom: 40px}
+footer ul li {float: left;width:40%;padding: 5px;}
+footer ul li a {color: #DDD;font-size: 18px; transition: all .4s ease}
+footer ul li a:hover {text-decoration: none;
+/*    color: #be1616*/
+}
+
+footer .social {padding-bottom: 30px}
+footer .social a {padding-right: 7px; color: #DDD; transition: all .4s ease;opacity: .5}
+footer .social a:hover {color: #FFF;text-decoration: none; opacity: 1}
+
+footer .media .media-opject {width: 50px; margin-top: 17px; height: 50px; }
+/*footer .media h4{color: #be1616}*/
+footer .media {color: #DDD}
+
+footer .img-thumbnail{max-width: 150px;max-height: 150px;height: 150px; width: 150px;margin-bottom: 7px;background: #888}
+footer .copyright{padding: 10px; font-size: 19px; background: #555}
+footer .copyright a{color: #DDD;font-weight: bold;transition: all .4s ease}
+footer .copyright a:hover{text-decoration: none;color: #7abbfd}
+
+/*--==============================================
+            End Footer
+=================================================-*/
+
+
+
+/*--==============================================
+           Start Loading Page
+=================================================-*/
+.loading{
+    background: #dd5f1c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: 9999
+}
+.loader {
+  font-size: 10px;
+  margin: 200px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #0dc5c1;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*--==============================================
+           End Loading Page
+=================================================-*/
+
+
+
+
+
+
+
+/*--==============================================
+            Start Button scroll top
+=================================================-*/
+
+#scroll-top{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px 5px 8px;
+    text-align: center;
+/*
+    background: #be1616;
+    color: #000;
+*/
+    border-radius: 4px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer
+}
+
+.rotate1{
+    ta
+}
+
+
+/*--==============================================
+            End Button scroll top
+=================================================-*/
+
+
+
+
+
