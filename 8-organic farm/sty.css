@@ -1,0 +1,10 @@
+#countact-us .continer .social{width:10%;height: 300px}
+#countact-us .continer .social ul li{list-style:none;padding: 10px}
+#countact-us .continer .social ul li a {width:50px;height: 50px; display:block;overflow: hidden; position: relative;}
+#countact-us .continer .social ul li a i{ transition: all .6s ease-in-out ; }
+#countact-us .continer .social ul li a .norm{position: absolute;left:0;top: 0px;color:#333}
+#countact-us .continer .social ul li a .hvr{position: absolute;left:-60px;top:0;}
+#countact-us .continer .social ul li a:hover .hvr{position: absolute;left:0;top: 0px}
+#countact-us .continer .social ul li a:hover .norm{position: absolute; left:60px }
+#countact-us .continer .social ul li a .twi{color:#2BA8E0}
+#countact-us .continer .social ul li a .google{color:#DC4A38}
