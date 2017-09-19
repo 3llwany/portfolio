@@ -11,7 +11,7 @@
 .header .overlay p{padding: 8px 0 0 0; margin-bottom: 0}
 .header .overlay button{margin-top: 10px}
     
-.social i{font-size: 25px; margin-bottom: 15px;}
+.social i{font-size: 25px; margin-bottom: 15px; margin-right: 0px}
 
 .taps-sec ul li{
     float: left;

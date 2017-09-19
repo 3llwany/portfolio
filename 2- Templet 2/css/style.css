@@ -86,7 +86,7 @@ body{height:  5000px;}
 .social {padding-top: 20px;padding-bottom: 20px}
 .social h3{margin: 0}
 .social p{margin-top: 5px; line-height: 1.4}
-.social i{color: #CCC;margin-right: 20px;transition: all .3s ease;cursor: pointer;margin-bottom: 10px}
+.social i{color: #CCC;margin-right: 20px;transition: all .3s ease;cursor: pointer;margin-bottom: 10px; margin-top: 22px}
 .social .fa-facebook:hover{color: #3b5999}
 .social .fa-twitter:hover{color: #1DA1F2}
 .social .fa-google-plus:hover{color: #DD4B39}
