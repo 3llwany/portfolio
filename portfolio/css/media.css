@@ -1,0 +1,53 @@
+/*=====================================================
+   Smart Phones And Taplets = Extra Small Screen[XS]
+  =====================================================*/
+
+
+
+@media (max-width: 767px) 
+{
+
+    h1 {font-size: 28px;}
+    .cv-body h2{letter-spacing: 4px}
+    h3 {font-size: 17px;}
+    .cv-body p{width: 100%}
+    .cv-body section{padding: 10px 20px; }
+    .teck-skills strong{font-size: 10px}
+    .portfolio button{padding: 10px; margin: 0; background: #FFF}
+}
+
+
+
+/*=====================================================
+           Small Screens[SM]
+  =====================================================*/
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+
+    
+}
+
+/* @media (min-width: 992px) {
+     .col-md-3 {
+         width: 20% !important;
+     }
+ }*/
+
+/*=====================================================
+          Medium Screens[Md]
+  =====================================================*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    
+   
+}
+/*=====================================================
+          Larg Screens[Lg]
+  =====================================================*/
+@media (min-width: 1200px)
+{
+
+    
+}
