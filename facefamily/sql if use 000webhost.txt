@@ -1,0 +1,20 @@
+   <?php
+    //mysql_connect('localhost', 'id6221741_facefamily03', 'facefamily03');
+    
+    $servername = "localhost";
+$username = "id6221741_facefamily03";
+$password = "facefamily03";
+$dbname = "id6221741_gps_location";
+$conn = new mysqli($servername, $username, $password, $dbname);
+   // mysql_select_db('id6221741_gps_location');
+    $sql = "SELECT * FROM direction";
+    $result = $conn->query($sql);
+    $rows =  $result->fetch_assoc();
+    $id = 'id';
+    $lat  = 'lat';
+    $lng  = 'lng';
+
+    
+    //echo "X:" . $rows[$x]. '<br> Y:' .$rows[$y];
+    
+?> 

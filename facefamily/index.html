@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Enternet Expoloer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For Mopile -->
+    <title>Face Family</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="Responsive-3D-Image-Slider-Plugin-For-jQuery-MWslider/sliderstyle.css">
+    <link rel="icon" href="img/lOCATION.png">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  
+    
+    
+    <!--=== Start NavBar ===-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!--=== Start NavBar Top ===-->
+        <section class="nav-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 ">
+                       <div class="search hdn">
+                            <form id="form_search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control show_result"  placeholder="Search for...">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" id="btnSearch" type="button">
+                                         <i class="fa fa-search fa-lg"></i>  
+                                    </button>
+                                  </span>
+                                </div>
+                                <!-- /input-group -->
+
+                                <!--<div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                   
+                                </div>-->
+                            </form>
+                            
+                                <!-- ================= Start Search Result Section ==================== -->
+                            <div class="search_result col-xs-11 col-md-8" style="display: none">
+                                <header>
+                                    <div class="search_type">
+                                       <!-- <button class="member active">Member</button>
+                                        <button class="post">Post</button>                            
+                                        <button class="edit">Edit</button> -->  
+                                        <i class="fa fa-window-close fa-lg close_search_bdy" title="Close"></i>
+                                    </div>                                    
+                                   
+                                </header>
+                                <div class="body">
+                                   <!-- <div class="person-info">
+                                        <a href="profile.html">
+                                            <img class="img-responsive" src="img/team/nav.png">
+                                            <p class="name">Sayed Elwany</p>
+                                        </a>
+                                        <button class="add_member">Add</button>
+                                    </div>
+
+                                     <div class="person-info">
+                                        <a href="profile.html">
+                                            <img class="img-responsive" src="img/team/nav.png">
+                                            <p class="name">Sayed Elwany</p>
+                                        </a>
+                                         <button class="add_member">Add</button>
+                                    </div>
+-->
+                                </div>
+                            </div>
+                            <!-- ================= End Search Result Section ==================== -->
+    
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 txxt-center-xs">
+                        <div class="registration hdn-reg" id="hdn-reg">
+                            <button class="login" type="button" data-toggle="modal" data-target="#login">LOG IN</button>
+                            <button class="signin" type="button" data-toggle="modal" data-target="#signin">SIGN UP</button>
+                        </div>
+
+                        <!--=======================================================================================-->
+
+
+
+                        <!--=======================================================================================-->
+
+                        <div class="social hidden-xs">
+                            <a href="https://www.facebook.com" target="_blank" class="facebook">
+                            <i class="fa fa-facebook "></i>
+                        </a>
+                            <a href="https://www.twitter.com" target="_blank" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                            <a href="https://www.gmail.com" target="_blank" class="plus">
+                             <i class="fa fa-google-plus"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=== End NavBar Top ===-->
+
+        <div class="container">
+            <!-- =========  For Mobile Design and Logo  =======================  -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#xs-screen-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Face <span>Family</span></a>
+            </div>
+            <!--  =================    Start Links    ============================   -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="xs-screen-navbar">
+                <ul class="nav navbar-nav navbar-">
+                    <li class="active">
+                        <a href="#home" class="link"> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="#features" class="link">Features</a></li>
+                    <li><a href="#team" class="link">Team</a></li>
+                    <li><a href="#contact-us" class="link">Contact US</a></li>
+                    <li class="profile hdn">
+                        <a href="profile.html" class="">
+                            <img class="img-responsive" id="uImgNavH" src="img/team/avatar.png">
+                            <p class="name" id="home_name">User</p>
+                        </a>
+                    </li>
+                    <!-- ======  Start Dropdown  =============  -->
+                    <li class="dropdown hdn"  id="bad">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                            <i class="fa fa-chevron-circle-down"></i>
+                            <!--<span class="caret"></span>-->
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li id="logOut" class="logOut"><a>Log Out</a></li>
+                        </ul>
+                    </li>
+                    <!-- ======  End Dropdown  =============  -->
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right nav-icon hdn">
+                    <li data-placement="top" data-toggle="tooltip" title="Time Line">
+                        <a href="timeLine.html">
+                            <img class="img-responsive" src="img/TIMELINE.png">
+                        </a>
+                    </li>
+                    
+                    <li data-placement="top" data-toggle="tooltip" title="Location">
+                        <a href="location.php" class="location">
+                            <img class="img-responsivelocation" src="img/lOCATION-nav.png">
+                        </a>
+                    </li>
+                    <li data-placement="top" data-toggle="tooltip" title="Friends">
+                        <a href="users.html">
+                            <img class="img-responsive" src="img/members-btn.png">
+                        </a>
+                    </li>
+                </ul>
+
+                <!--<a class="login" href="#Login">Log In</a>
+                <a class="signup" href="#Signup">Sign Up</a>
+-->
+                <!--  <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>             
+-->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!--=== End NavBar =====-->
+
+  
+    <!--=== Start header ===-->
+    <header class="Hdr-home" id="home">
+        <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12 wow bounceInLeft">
+                    <div class="caption">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                        <a href=#download>
+                            <button class="play-store">
+                                <img src="img/playstore.png" class="img-responsive">
+                                <!--<i class="fa fa-apple"></i>
+                                Google Play-->
+                            </button>
+                        </a>
+                             <button class="iphone">
+                                 <!--<i class="fa fa-apple " aria-hidden="true"></i>
+                                 Soon-->
+                                 <img src="img/iosMob.png" class="img-responsive">
+                                 
+                            </button>
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="social visible-xs">
+                                    <a href="#facebook" class="facebook">
+                                    <i class="fa fa-facebook "></i>
+                                </a>
+                                    <a href="#twitter" class="twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                    <a href="#google-plus" class="plus">
+                                     <i class="fa fa-google-plus"></i>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Start Slider -->
+                <div class="col-md-7 col-xs-12">
+                    <div class="slidshow">
+                        <div id="jquery-script-menu">
+                            <div class="jquery-script-center">
+
+                                <div class="jquery-script-ads">
+                                    <script type="text/javascript">
+                                        
+                                        google_ad_client = "ca-pub-2783044520727903";
+                                        /* jQuery_demo */
+                                        google_ad_slot = "2780937993";
+                                        google_ad_width = 728;
+                                        google_ad_height = 90;
+                                        
+                                    </script>
+                                    <!--<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                                    </script>-->
+                                </div>
+                                <div class="jquery-script-clear"></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <section class="slider">
+                                <img width="100%" height="100%" src="img/slider/right.jpeg" class="right" />
+                                <img width="100%" height="100%" src="img/slider/left.jpeg" class="left" />
+                                <img width="100%" height="100%" src="img/slider/mid.jpeg" class="center" />
+                            </section>
+                        </div>
+                        <script type="text/javascript">
+                            var _gaq = _gaq || [];
+                            _gaq.push(['_setAccount', 'UA-36251023-1']);
+                            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                            _gaq.push(['_trackPageview']);
+
+                            (function() {
+                                var ga = document.createElement('script');
+                                ga.type = 'text/javascript';
+                                ga.async = true;
+                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(ga, s);
+                            })();
+                        </script>
+                    </div>
+                </div>
+                <!--End Slider -->
+            </div>
+            <!--End Row -->
+            <!--
+            <div class="chat icon hidden-xs">    
+            <img src="img/lOCATION.png" class="img-responsive">
+            </div>
+            <div class="location icon hidden-xs">
+                <img src="img/MESSAGE.png" class="img-responsive">
+            </div>
+            <div class="chat-box hidden-xs">
+                chat Box
+            </div>
+            <div class="location-box hidden-xs">
+                Location Box
+            </div>
+            -->
+
+        </div>
+</div>
+    </header>
+    <!--=== End header ===-->
+    <!--== Start Features ==-->
+    <section class="features text-center padding" id="features">
+        <div class="container">
+            <h2 class="h1 under-line-center">Features</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="feat wow bounceInLeft" data-wow-offset='300'> 
+                        <div class="icon tracking">
+                            <!--<i class="fa fa-map-marker fa-4x"></i>-->
+                            <img class="img-responsive" src="img/feats_icons/Tracking_03.png">
+                        </div>
+                        <h3>TracKing</h3>
+                        <p> you should always provide alternative content to identify the purpose of the control. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="feat wow bounceInDown"  data-wow-offset='300'>
+                        <div class="icon">
+                            <!--<i class="fa fa-calendar fa-3x"></i>-->
+                            <img class="img-responsive" src="img/feats_icons/Face-recognation_03.png">
+                        </div>
+                        <h3>Facial Recognition </h3>
+                        <p> you should always provide alternative content to identify the purpose of the control. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="feat wow bounceInUp"  data-wow-offset='300'>
+                        <div class="icon">
+                            <!--<i class="fa fa-commenting-o fa-3x"></i>-->
+                            <img class="img-responsive" src="img/feats_icons/Send-alarm_03.png">
+                        </div>
+                        <h3>Alarms</h3>
+                        <p> you should always provide alternative content to identify the purpose of the control. </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3" >
+                    <div class="feat wow bounceInRight"  data-wow-offset='300'>
+                        <div class="icon">
+                            <!--<i class="fa fa-heart fa-3x"></i>-->
+                            <img class="img-responsive" src="img/feats_icons/Add-report_03.png">
+                        </div>
+                        <h3>Social</h3>
+                        <p> you should always provide alternative content to identify the purpose of the control. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--===== End Features ======-->
+
+    <!--===== Start Team ======-->
+    
+    
+    <section class="team padding" id="team">
+        <div class="container">
+            <h2 class="h1 under-line-center">Our Team</h2>
+            <div class="row">
+                 <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/ehab.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/ElgeneraL960" class="facebook">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/ehab_fat7y?s=09" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#google-plus" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Ehab Mohamed</h3>
+                            <h5>UI/UX Designer</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/el.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/3llwaNy" class="facebook" target="_blank">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/3llwaNy" class="twitter" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#https://plus.google.com/106135980188943855905" target="_blank" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Sayed Elwany</h3>
+                            <h5>Full Stack Web Developer</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/shrouk1.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/shrouk.elkady.1" class="facebook">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/3llwaNy" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#google-plus" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Shrouk Mohamed</h3>
+                            <h5>Android Developer</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/mo7sen.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/AhmedM.AbdElmohsen.pro" class="facebook">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/3llwaNy" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#google-plus" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Ahmed Mohamed</h3>
+                            <h5>Android Developer</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/y3qop2.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/profile.php?id=100006684132730" class="facebook">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/3llwaNy" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#google-plus" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Eslam Ahmed</h3>
+                            <h5>Embedded System</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-3 margnLeft">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/khaled.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/khaliedw?ref=br_rs" class="facebook">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/3llwaNy" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#google-plus" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Khaled Waleed</h3>
+                            <h5>Graphic Designer</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-4 col-md-3 col-md-offset-1  col-sm-offset-4  col-xs-offset-3 margnLeft">
+                    <div class="member">
+                        <div class="img">
+                            <img class="img-responsive" src="img/team/abdallah.jpg">
+                            <div class="overlay">
+                                <p> you should always provide alternative content to identify the purpose of the control.</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/100004369908837" class="facebook">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a href="https://twitter.com/abdalla86947045" class="twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#google-plus" class="plus">
+                                         <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <h3>Abdallah Hassan</h3>
+                            <h5>Web Developer</h5>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+    </section>
+    <!--===== End Team ======-->
+
+
+
+
+    <!--==== Start Contact US ====-->
+    <section class="contact-us text-center padding" id="contact-us">
+        <div class="container">
+            <section class="row">
+                <h2 class="h1 under-line-center"> get in touch</h2>
+                <form rol="form" id="message">
+
+                    <div class="col-md-6 col-md-offset-3">
+                        <input type="email" name="email" id="msgEmail" placeholder="Your Email... *" required>
+                        <input type="text" name="name" id="msgName" placeholder="Your Name...">
+                        <input type="text" name="phone" id="msgPhone" placeholder="Your Phone...">
+                        <textarea class="form-control input-lg" id="msg" placeholder="Your Message... *" required></textarea>
+                        <input type="submit" class="btn" id="sendMsg" value="Send">
+                    </div>
+                </form>
+            </section>
+
+        </div>
+    </section>
+    <!--=== End Contact US ===-->
+    <!--=== Start Footer ===-->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="copyright padding">
+                        <a class="home" href="index.html">Face <span>Family</span></a>
+                        <a href="#">Privacy |</a>
+                        <a href="#">Terms&amp;Conditions</a>
+                        <p>CopyRight&copy;2018 FaceFamily</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="sitemap padding">
+                        <ul>
+                            <li><a href="index.html" class="link">Home</a></li>
+                            <li> <a href="#features" class="link">Fetures</a></li>
+                            <li><a href="#team" class="link">Team</a></li>
+                            <li><a href="#contact-us" class="link">Countact Us</a></li>
+                            <li><a href="timeLine.html" class="link hdn">Time line</a></li>
+                            <li><a href="profile.html" class="link hdn">Profile</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social">
+                        <a href="#facebook" class="facebook">
+                            <i class="fa fa-facebook"></i>
+                            <p>Facebook</p>
+                        </a>
+                        <a href="#twitter" class="twitter">
+                            <i class="fa fa-twitter"></i>
+                            <p>Twitter</p>
+                        </a>
+                        <a href="#google-plus" class="plus">
+                            <i class="fa fa-google-plus"></i>
+                            <p>Gmail</p>
+                        </a>
+                        <p class="copyright">CopyRight&copy;2018 FaceFamily</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="designed_by text-center">
+            Designed and Developed By <a href="https://www.facebook.com/3llwaNy" target="_blank" data-placement="top" data-toggle="tooltip" title="visit my facebook account">3llwaNy</a>
+        </div>
+    </footer>
+    <!--=== End Footer ===-->
+
+
+
+    <!-- ================  Start Model For Log In ================ -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="exampleModalLabel">LogIn To Face Family</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="formLogin">
+                        <div class="form-group">
+                            <label for="recipient-name"  class="control-label">Email:</label>
+                            <input type="text" class="form-control" id="emailLog" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Password:</label>
+                            <input type="password" class="form-control" id="passLog" required>
+                            <button id="forgetPass" type="button" data-toggle="modal" data-target="#forget-pass">Forgot password</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" id="btnLogin" class="btn btn-primary btnLogin">Login</button>
+<!--
+                            <a id="btnLogin" class="btn btn-primary">Login</a>
+-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================  End Model For Log In ================ -->
+
+
+        
+<!-- ================  Start Modal For Forget Password  ================ -->
+<div class="modal fade" id="forget-pass" tabindex="-1" role="dialog" aria-labelledby="forget-pass">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Reset Password</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="emailSentReq" placeholder="Enter Your Email...">
+                    <p class="error-pass"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="resetPass">Send Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================  Start Modal For Forget Password ================ -->
+ 
+    
+
+
+    <!-- ================  Start Model For Create Profile ================ -->
+    <div class="modal fade model-signup" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-create-profile ">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="exampleModalLabel">Create Profile</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="form-profile">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="firstName"   placeholder="First Name..." required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name..."  required>
+                        </div>
+                        <div class="form-group full-width">
+                            <input type="email" class="form-control" id="email" placeholder="Email..." required>
+                            
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="number" placeholder="Mopile Number..." maxlength="11" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Creat Password..." required>
+                        </div>
+                        <form id="userType">
+                           <ul class="radio">
+                                <li>
+                                    <input type="radio" id="lose" name="person-type" value="mail" checked>
+                                    <label for="lose">Male</label>
+                                    <div class="check"></div>
+                                </li>
+                                <li>
+                                    <input type="radio" id="find" name="person-type" value="female">
+                                    <label for="find">Female</label>
+                                    <div class="check"></div>
+                                </li>
+                            </ul>
+                        </form>
+                        <select id="country" class="country" name="country">
+                            <option>Choose Country</option>
+                            <option>Alexandria</option>
+                            <option>Aswan</option>
+                            <option>Asyut</option>
+                            <option>Beheira</option>
+                            <option>Beni Suef</option>
+                            <option>Cairo</option>
+                            <option>Dakahlia</option>
+                            <option>Damietta</option>
+                            <option>Faiyum</option>
+                            <option>Gharbia</option>
+                            <option>Giza</option>
+                            <option>Ismailia</option>
+                            <option>Kafr El Sheikh</option>
+                            <option>Luxor</option>
+                            <option>Matruh</option>
+                            <option>Minya</option>
+                            <option>Monufia</option>
+                            <option>New Valley</option>
+                            <option>North Sinai</option>
+                            <option>Port Said</option>
+                            <option>Qalyubia</option>
+                            <option>Qena</option>
+                            <option>Red Sea</option>
+                            <option>Sharqia</option>
+                            <option>Sohag</option>
+                            <option>South Sinai</option>
+                            <option>Suez</option>
+                        </select>
+
+                       <label class="lable btn btn-lab" for="userImgUploader">
+                            <input id="userImgUploader" type="file" style="display:none"
+                                    onchange="$('#file_name').html(this.files[0].name)">
+                            <i class="fa fa-image"></i>
+                            Choess Your Photo
+                        </label>
+                        
+                        <span class='label label-info file-label' id="file_name">Please Choose an photo</span>
+                        <p class="error" id="error"></p>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary creatProfile" id="creatProfile" disabled>Creat</button> 
+                            <!--<button id="rem">Upload</button>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================  End Model For Create Profile ================ -->
+    
+    
+
+
+    <!--=== Start Button Scroll Top === -->
+
+    <section class="scroll-top">
+        <i class="fa fa-chevron-up fa-3x"></i>
+    </section>
+
+    <!--==== End Button Scroll Top ===-->
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/wow.min.js"></script>
+     <script> new WOW().init(); </script>
+    <script src="js/main.js"></script>
+    <!-- Start Firebase Database -->
+   <!-- <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>--> 
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-functions.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-storage.js"></script>
+    <script src="js/database.js"></script>
+    <!-- End Firebase Database -->
+    <script src="Responsive-3D-Image-Slider-Plugin-For-jQuery-MWslider/slider.jquery.js"></script>
+</body>
+
+</html>

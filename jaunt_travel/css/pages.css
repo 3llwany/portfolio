@@ -1,0 +1,92 @@
+
+/*===========================================
+            Start About Us Page
+============================================*/
+/*=========== Start About US Section*/
+.about-us{padding-top: 70px; padding-bottom: 50px}
+.about-us h1{padding-bottom: 40px; color: #EA9728;text-align: center}
+.about-us .content h3{margin-top: 0}
+.about-us p{ color: #8B8B8B; line-height: 2.5}
+/*=========== End About US Section*/
+
+
+/*=========== Start Our Team Section*/
+.our-team {padding-top: 10px; padding-bottom: 40px; background: #F7F7F7}
+.our-team h2{color: #EA9728;margin-bottom: 50px; font-size: 50px }
+.our-team .person-info {margin-bottom: 20px}
+.our-team .person-info h3{color: #3E8FBA;}
+.our-team .person-info h3 i{   
+    padding: 3px;
+    border: 2px solid #3E8FBA;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 11px;
+    cursor: pointer;
+    text-align: center
+}
+.our-team .person-info h3 i{transition: all .3s}
+.our-team .person-info h3:hover i{color: #EA9728; border-color: #EA9728 }
+.our-team .person-info p{color: #8B8B8B;}
+.our-team .person-info .img-thumbnail{background: #e8e8e8}
+
+
+.our-team .person-info .modal-dialog{width: 40%}
+.our-team .person-info .modal-content {padding: 20px 40px; border: 5px solid #EA9728;top: 100px}
+.our-team .person-info .modal-content h3{margin: 10px; }
+.our-team .person-info .modal-content i{margin-right: 10px; opacity: .7; transition: all .3s ease}
+.our-team .person-info .modal-content i:hover{opacity: 1; transform: scale(1.1)}
+.our-team .person-info .modal-content i:first-of-type{color: #4267B2}
+.our-team .person-info .modal-content i:nth-of-type(2){color: #BE1414}
+.our-team .person-info .modal-content i:last-of-type{color: #2AA9E0}
+/*=========== End Our Team Section*/
+/*===========================================
+            End About Us Page
+============================================*/
+
+
+
+/*===========================================
+            Start Packages Page
+============================================*/
+
+.our-packages {padding-top: 70px; padding-bottom: 20px;}
+.our-packages h1{color: #EA9728; font-size: 40px}
+.our-packages p{ color: #8B8B8B; width: 60%; margin: 0 auto 50px; }
+.our-packages .content{background: #3E8FBA; padding: 10px; color: #FFF; margin-bottom: 20px}
+.our-packages .content p{margin: 5px auto; color: #FFF;font-size: 20px; font-weight: 600}
+
+
+
+/*===========================================
+            End Packages Page
+============================================*/
+
+
+
+
+
+
+
+/*===========================================
+            Start Packages Page
+============================================*/
+
+.contact-us{padding-top: 60px; padding-bottom: 20px;}
+.contact-us h1{color: #EA9728; font-size: 40px; text-align: center; }
+.contact-us p{ color: #8B8B8B}
+.contact-us  h1~p{ color: #8B8B8B; width: 60%; margin: 0 auto 30px; text-align: center;}
+.contact-us h2{color: #3E8FBA; font-weight: 600; margin-top: 0}
+.contact-us h2~p{line-height: 2.5}
+.contact-us h2~span{color:#8B8B8B;font-weight: 600; display: block; margin-bottom: 10px}
+.contact-us span~p{line-height: 1}
+.contact-us form input,
+.contact-us form textarea{display: block; padding: 7px; outline: none; margin-bottom: 10px; width: 80%}
+.contact-us form textarea{height: 150px; resize: none}
+.contact-us form input[type="submit"]{
+    width: 20%; background:#3E8FBA; color: #FFF; border: none; padding: 10px; transition: all .3s ease-in-out }
+.contact-us form input[type="submit"]:hover{background: #EA9728}
+/*===========================================
+            End Packages Page
+============================================*/
+

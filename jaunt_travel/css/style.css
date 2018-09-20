@@ -1,0 +1,341 @@
+*{box-sizing: border-box}
+body{position: relative}
+/*===========================================
+            Start Slider
+============================================*/
+.slider{
+    min-height: 350px;
+    position: relative;
+}
+.slider{overflow: hidden}
+.slider .carousel-inner .item img{width: 100%;height: 50%; max-height: 50%}
+/*.slider .carousel-inner>.item>a>img{width: 100%; height: 100%}*/
+.carousel-control.left{
+    left: 50%;
+    top: 90%;
+    width: 50px;
+    height: 50px;
+    background: #FAA026;
+    border: 1px solid #FFF;
+    opacity: 1;
+    text-align: center
+}
+.carousel-control.right{
+    top: 90%;
+    right: 40%;
+    width: 50px;
+    height: 50px;
+    background: #FAA026;
+    border: 1px solid #FFF;
+    opacity: 1;
+    text-align: center
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev{
+    font-size: 22px
+}
+.slider .packages {
+    max-width: 100%;
+    width: 100%;
+    position:absolute;
+    top: 80px;
+    left: 0;
+}
+.slider .packages .row{margin-right: 0; margin-left: 0}
+.slider .packages button{color: #FAA026 ; background: #FFF;}
+.slider .packages button:hover{color: #3A85AC}
+.slider .packages .summer{
+    background: #3A85AC;
+    padding: 15px;
+    position: relative;
+    color: #FFF;
+    right: 0px;
+}
+.slider .packages .summer div p{font-size: 20px}
+
+.slider .packages .summer > div,
+.slider .packages .festival > div{
+    border: 1px solid #FFF;
+    padding: 10px 10px 43px;
+}
+.slider .packages .summer div span,
+.slider .packages .festival div span{
+    background: #FFF;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-right: 120px;
+    display: inline-block;
+    color: #5F8B9E;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight:800; 
+}
+.slider .packages .festival{
+    background: #EA9728;
+    padding: 15px;
+    right: 0;
+    color: #FFF
+}
+/*===========================================
+            End Slider
+============================================*/
+
+/*===========================================
+            Start NavBar
+============================================*/
+.navbar-fixed-top{ position: sticky}
+.navbar-fixed-top ul{margin-left: 0}
+.navbar{
+    background: #3E8FBA;
+    border: none;
+    padding: 15px;
+    border-radius: 0;
+    margin-bottom: 0
+}
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand{
+    color: #FFF;
+    font-size: 35px
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background: none;
+    color: #000
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+    transition: all .5s ease-out;
+    margin-right: 20px;
+    padding: 17px 0 7px;
+    position: relative;
+    
+}
+.navbar-inverse .navbar-nav>.active>a:after{ display: inline-block; top: 47px;}
+.navbar-inverse .navbar-nav>li>a:after{
+    content: " ";
+    width: 100%;
+    height: 5px;
+    background: #EA9728;
+    position: absolute;
+    left: 0;
+    top: 33px;
+    display: none;
+}
+.navbar-inverse .navbar-nav>li>a:hover:after{
+    display: inline-block;
+    top: 47px;
+}
+
+.navbar-inverse .navbar-form{
+    background: #FFF;
+    border-radius: 20px
+}
+.navbar-form .form-control{
+    background: transparent;
+    border: none;
+    padding-left: 0;
+    outline: 0;
+    box-shadow: none
+}
+.navbar-form i{cursor: pointer}
+/*===========================================
+            End NavBar
+============================================*/
+
+/*===========================================
+            Start overs
+============================================*/
+
+.overs{
+    background: url(../img/4.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin: 0
+}
+.overs .main-content{padding: 10px; background: #FFF; margin-bottom: 60px }
+.overs .main-content i{
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    color: #FFF;
+    background: #EA9728;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #FFF;
+    border-radius: 50%;
+    line-height: 70px;
+    transition: all .5s ease;
+    cursor: pointer;
+    text-align: center
+
+}
+.overs .main-content i:hover{
+    background: #3E8FBA;
+    transform: scale(.9)
+}
+
+/* Start Hover Icons*/
+
+.overs .main-content i:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: " ";
+    border-radius: 50%;
+     -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.overs .main-content i:hover:after{
+    animation: icon-hover 1.3s ease-out 75ms;
+}
+
+@keyframes icon-hover{
+    
+      0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(203, 178, 92, 0.81), 0 0 10px 10px #8e8e8e, 0 0 0 10px rgba(203, 178, 92, 0.81);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(203, 178, 92, 0.81), 0 0 10px 10px #8e8e8e, 0 0 0 10px rgba(203, 178, 92, 0.81);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+}
+
+
+
+
+.overs .content{
+    border: 1px solid #000;
+    padding: 10px
+}
+.overs .content h3{color: #EA9728; margin: 55px 0 20px}
+.overs .content p{ color: #6F6F6F; line-height: 1.8;margin-bottom: 40px; font-size: 18px}
+.overs .content button{
+    background: #3E8FBA;
+    border-radius: 5px; 
+    transition: all .3s ease;
+    margin-bottom: 50px;
+    color: #FFF;
+    width: 100px
+}
+.overs .content button:hover{background: #EA9728}
+/*===========================================
+            End overs
+============================================*/
+
+
+/*===========================================
+            Start Featured Packages
+============================================*/
+.features-pacages h2{background: #EA9728; color: #FFF; width: 70%;padding: 10px;margin: 0 auto 80px;}
+.features-pacages .row-tow,
+.features-pacages .row-three{display: none}
+.features-pacages .row >div{margin-right: 0}
+.features-pacages .img{height: 70%}
+.features-pacages .img img{width: 100%; height: 100%; margin-bottom: 0}
+.features-pacages .content{background: #3E8FBA;color: #FFF;padding: 20px; text-align: center; margin-bottom: 20px}
+.features-pacages .content h3{padding-top: 0; margin-top: 0}
+.features-pacages .content p{float: left; width: 40%; display: inline-block}
+.features-pacages button {
+    padding: 20px 10px;
+    width: 150px; 
+    margin: 20px 10px;
+    transition: all .5s ease; 
+    border: none; 
+    color: #FFF;
+    outline: none 
+}
+.features-pacages button.more{background: #EA9728;}
+.features-pacages button.more:hover{background: #3E8FBA;color: #EA9728}
+.features-pacages button.less{background: #3E8FBA}
+.features-pacages button.less:hover{background: #EA9728; color: #3E8FBA}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{padding-right: 8px}
+
+/*===========================================
+            End Featured Packages
+============================================*/
+
+
+/*===========================================
+            Start Footer
+============================================*/
+footer {
+    background: #3E8FBA;
+    padding: 20px;
+    color: #FFF;
+    
+}
+footer a{text-decoration: none; color: #FFF; display: inline-block; margin: 0}
+footer a.home{font-size: 40px; }
+footer a.home:hover{text-decoration: none; color: #FFF}
+footer p{display: inline; line-height: 60px;  font-size: 15px }
+footer p a{color: #EA9728; }
+/*===========================================
+            End Footer
+============================================*/
+/*===========================================
+            Start Button Scrool Top
+============================================*/
+.scroll-top{
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    color: #EA9728;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer; border: 2px solid #3E8FBA;
+    transition: all .5s ease-in-out;
+    display: none
+}
+
+
+/*===========================================
+            End  Button Scroll Top
+============================================*/
+/*===========================================
+            Start 
+============================================*/
+
+
+
+/*===========================================
+            End 
+============================================*/
+
+/*===========================================
+            Start 
+============================================*/
+
+
+
+/*===========================================
+            End 
+============================================*/
+
+/*===========================================
+            Start 
+============================================*/
+
+
+
+/*===========================================
+            End 
+============================================*/

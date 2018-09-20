@@ -1,0 +1,1684 @@
+/*--==== Start NavBar ======*/
+/*--==== Start Nav TOP ======*/
+/*@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+*{font-family: 'Comfortaa', sans-serif, cursive}*/
+/*
+img[title]:hover:after{
+    content: attr(title);
+    background: red; 
+    position: absolute;
+}*/
+
+
+
+html{cursor: default !important}
+.nav-top{background-image :linear-gradient(to right, #27ab7b, #27ab7b, #27ab7b, #a1ef5a); min-height: 45px; max-height: 149px}
+.search{margin-top: 5px}
+.search form {
+    width: 52%;
+}
+.search form .input-group input [type="text"]{outline: none ! importatn}
+.search form .input-group button{transition: all .3s ease-in-out}
+.search form .input-group button:hover,
+.search form .input-group button:focus,
+.search form .input-group button:active{
+    background: #6464ac;
+    color: #FFF;
+    border-color: #6464ac
+}
+.search_result {
+    position: absolute;
+    background: #FFF;
+    z-index: 9999;
+    border-bottom: 2px solid #6464ac;
+    padding: 0;
+    display: none
+  }
+.search_result header{
+    background: #f6f7f9;
+    padding: 5px;
+    border-bottom: 1px solid #dedede;
+}
+.search_result header >div{display: block;}
+.search_result header button{
+    background: inherit;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f7f7f7;
+    transition: all .2s ease-in-out
+}
+.search_type{direction: rtl}
+.close_search_bdy{
+    color: #bb0606d9;
+    cursor: pointer
+}
+
+.search_result .body{
+    padding: 5px
+}
+.search_result header button:hover,
+.search_result header button.active{border-bottom: 1px solid #6464ac; color: #6464ac}
+.search_result .person-info{
+    background: #f6f7f9;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+}
+.search_result .person-info a{text-decoration: none; color: #000}
+.search_result .person-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #6464ac;
+    max-width: 50px;
+    max-height: 50px;
+}
+.search_result .person-info .name{
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6464ac;
+    display: inline-block
+}
+/*.search_result .person-info*/ 
+.navbar-form i{cursor: poinpointer; color: #FFF;outline: 1px solid red }
+.registration{
+    display: inline-block;
+    margin-top: 5px
+}
+.registration a{text-decoration: none; margin-right: 10px}
+.registration .login,
+.registration .signin {
+    color: #FFF;
+    padding: 7px 20px 4px;
+    outline: none;
+    border: 2px solid #FFF;
+    border-radius: 16px;
+    transition: all .4s;
+    background: inherit;
+    margin-right: 10px
+}
+.registration .login:hover{
+    background: #FFF;
+    color: #27ab7b;
+    font-weight: 600
+    /*box-shadow: 2px 2px 10px #00000059;*/ 
+}
+.registration .signin:hover {
+    border-color: #6464ac;
+    background: #6464ac;
+    font-weight: 600
+}
+.nav-top .social{
+    float: right;
+    margin-right: -23px;
+    margin-top: 0px
+}
+.nav-top .social a {
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-top .social a > i{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #FFF;
+    padding: 2px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: all .4s ease;
+    background: inherit;
+    display: inline-block
+    
+}
+.nav-top .social a i:hover{color: #FFF}
+.nav-top .social .facebook:hover i{
+    background: #4267B2;
+    border-color: #4267B2
+        
+}
+
+.nav-top .social .twitter:hover i{
+    background: #1DA1F2;
+    border-color: #1DA1F2
+}
+
+.nav-top .social .plus:hover i{
+    background: #C93B2A;
+    border-color: #C93B2A
+}
+/*--==== End Nav TOP ======*/
+
+
+
+/*  ============= NavBar Hight =========  */
+.navbar {
+    min-height: 74px;
+    background: #6464ac;
+    border-bottom: 1px solid #7373bc !important;
+}
+
+.navbar .nav {
+    margin-left: 7%
+}
+
+.navbar-inverse {
+    border: none
+}
+
+/* =========  Active Link Background color========================== */
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: inherit;
+}
+
+.navbar-inverse .navbar-nav > li {
+    position: relative
+}
+
+.navbar-inverse .navbar-nav > li:hover :after,
+.navbar-inverse .navbar-nav > li.active :after {
+    display: block;
+    content: " ";
+    width: 90%;
+    height: 4px;
+    background: rgb(163, 163, 199);
+    position: absolute;
+    left: 4px;
+    top: 93%;
+}
+.navbar-inverse .navbar-nav > li.profile:hover :after,
+.navbar-inverse .navbar-nav > li.profile.active :after {
+    display: block;
+    content: " ";
+    width: 90%;
+    height: 4px;
+    background: rgb(163, 163, 199);
+    position: absolute;
+    left: 7px;
+    top: 104%;
+}
+
+/* ========= color Span in Brand  ============ */
+
+.navbar-inverse .navbar-brand {
+    font-size: 25px;
+    color: #b0c4d8;
+    line-height: 32px;
+    font-weight: normal;
+    transition: all .4s ease-in-out;
+    /*
+    font-family: Comfortaa;
+*/
+}
+
+.navbar-inverse .navbar-brand span {
+    font-weight: bold; 
+}
+
+/* ======== navbar Button Toggole in mobile ========*/
+
+.navbar-toggle {
+    margin-top: 17px;
+    border-color: #FFF !important
+}
+.navbar-toggle:hover,
+
+/* =========  Links Color ======================*/
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {background: transparent}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #b0c4d8;
+    font-size: 18px;
+    padding: 20px 8px;
+    /*padding-top: 25px;
+    padding-bottom: 25px;*/
+    transition: all .3s ease-in-out;
+}
+.navbar-inverse .navbar-nav .profile > a{
+    padding: 10px 8px; 
+    display: inline-block;
+}
+
+.navbar-inverse .navbar-nav .profile > a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    border: 1px solid #b7b7b7;
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: 3px
+}
+.navbar-inverse .navbar-nav .profile > a .name {
+    float: left;
+    margin: 7px 10px;
+}
+/*
+.navbar .login,
+.navbar .signup {
+    color: #FFF;
+    padding: 5px 20px;
+    outline: none;
+    margin: 1px 5px;
+    border-radius: 25px;
+    transition: all .4s;
+    text-decoration: none;
+    display: inline-block
+}
+
+.navbar .login {
+    background: #27ab7b;
+    border: 2px solid #27ab7b;
+}
+
+.navbar .login:hover {
+    border: 2px solid #FFF
+}
+
+.navbar .signup {
+    background: inherit;
+    border: 2px solid #FFF;
+}
+
+.navbar .signup:hover {
+    background: #27ab7b;
+    border: 2px solid #FFF;
+}*/
+/* === start pages Navbar =====*/
+.nav-icon > li{
+    width: 30px;
+    height: 30px;
+    margin: 15px 5px;
+    background: #f7f7f7;
+    border-radius: 50% ! important;
+
+}
+.nav-icon > li a{
+    width: 100%;
+    height: 100%;
+    padding: 5px ! important;
+    margin: 0;
+    display:inline-block;
+    border-radius: 50% ! important;
+    text-decoration: none;
+    text-align: center
+}
+.nav-icon > li a img{border-radius: 5px; width: 20px}
+.nav-icon > li a.location{padding: 3px ! important}
+.nav-icon > li a.location img{ width: 17px}
+.nav-icon > li:hover :after,
+.nav-icon > li.active :after{
+    display: block;
+    content: " ";
+    width: 100% ! important;
+    height: 4px;
+    background: rgb(163, 163, 199);
+    position: absolute;
+    left: 0 ! important;
+    top: 133% ! important;
+}
+.nav-icon > li a img.location{padding: 0 4px}
+.caret{
+    border-top: 8px dashed;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+/* === End pages Navbar =====*/
+[hidden] {display: none ! important}
+
+
+.dropdown-menu > li > a{
+    color: #6464ac
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+    color: #ffffff;
+    background-color: #6464ac;
+}
+.navbar-inverse .navbar-nav > li.dropdown :after{
+    display: none ! important
+}
+/*--==== End NavBar =====*/
+
+/*--==== Start .Hdr-home ======*/
+
+.Hdr-home {
+    height: 84vh;
+    background-image: url('../img/bannerlap.jpeg');
+    background-size: cover;
+    margin-top: 106px;
+    position: relative;
+    max-height: 100vh;
+    /*background: radial-gradient(#cccaca -137%, #6464ac 76%);*/
+    /*background: linear-gradient(to right, #6464ac, #FC466B 132%);*/
+}
+
+.overlay{background: rgba(3,3,3,.7); width: 100%; height: 100%}
+.Hdr-home .caption {
+    margin-top: 20%;
+    margin-bottom: 30px;
+   
+}
+
+.Hdr-home .caption p {
+    color: #FFF;
+    font-family: 'Comfortaa', cursive;
+}
+
+.Hdr-home .caption .social {
+    margin-left: 23%
+}
+
+.Hdr-home .caption .social a {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.Hdr-home .caption .social a i{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #FFF;
+    padding: 5px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: all .4s ease;
+    background: inherit;
+    
+}
+
+.Hdr-home .caption .social .facebook:hover i{
+    background: #4267B2;
+    border-color: #4267B2
+        
+}
+
+.Hdr-home .caption .social .twitter:hover i{
+    background: #1DA1F2;
+    border-color: #1DA1F2
+}
+
+.Hdr-home .caption .social .plus:hover i{
+    background: #C93B2A;
+    border-color: #C93B2A
+}
+
+.Hdr-home .caption a button{color: #FFF; text-decoration: none}
+.Hdr-home .caption button {
+    width: 30%;
+    height: 46px;
+    margin-right: 5%;
+    outline: none;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    color: #FFF;
+    margin-top: 3%;
+    transition: all .4s ease;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.Hdr-home .caption button img{width: 100%; height: 100%}
+.Hdr-home .caption button.play-store {
+    font-size: 18px;
+    /*background: url('../img/playstore.png') no-repeat;*/
+    background-size: 
+}
+/*
+.Hdr-home .caption button.play-store:hover{ background: #2bc18b; border: 1px solid #FFF}
+*/
+.Hdr-home .caption .iphone {
+    background-color: inherit;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center
+}
+.Hdr-home .caption .iphone i{width: 40%; height: 100%; font-size: 40px; display: inline-block; margin: auto}
+/*
+.Hdr-home .caption .iphone:hover{background: #27ab7b; border: 2px solid #FFF}
+*/
+.Hdr-home .icon{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #e8e8ed;
+    border: 2px solid #e8e8ed;
+    border-radius: 50%;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+    padding: 1%
+   
+    
+}
+
+.Hdr-home .slidshow .slider{ 
+    height: 370px ! important;
+    left: 100px;
+    width: 100%;
+    top: 165px;
+}
+
+.slider>img {
+    /*border: 1px solid #c3cfe5;*/
+    border-radius: 5px;
+    /*box-shadow: 2px 2px 10px #6b6aae,
+            -2px -2px 10px #6b6aae;*/
+}
+.Hdr-home .chat{
+    left: 41%;
+    bottom: -50px;
+/*
+    background: url('../img/Messanger.png') no-repeat center center;
+*/
+}
+.Hdr-home .icon img{max-width: 100%; max-height: 100%; margin: auto}
+.Hdr-home .location{
+    left: 51%;
+    bottom: -50px;
+    color: #6464ac;
+    font-size: 32px;
+    padding: 2%
+/*
+    background: url('../img/GPS.png') no-repeat center center;
+*/
+}
+.Hdr-home .chat-box{
+    position: absolute;
+    width: 50%;
+    height: 182px;
+    background: #6464ac;
+    bottom: -182px;
+    left: 315px;
+    z-index: 1; 
+    color: #FFF;
+    display: none
+}
+.Hdr-home .location-box{
+    position: absolute;
+    width: 50%;
+    height: 182px;
+    background: #6464ac;
+    bottom: -182px;
+    right: 225px;
+    z-index: 1; 
+    color: #FFF;
+    display: none
+}
+/*--==== Start .Hdr-home ======*/
+
+ /*--== Start Features ===*/
+.features{
+    background: #DDD;
+    color: #000;
+    border-bottom: 3px solid #6464ac;
+
+}
+.features .feat{
+    background: #FFF;
+    border-bottom: 3px solid #6464ac;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all .5s ease
+    
+} 
+.features .feat:hover{transform: scale(1.05);box-shadow: 3px 3px 39px #aeaec7;}
+.features .feat .icon{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    /*border: 2px solid #6464ac;*/
+    border-radius: 50%;
+    text-align: center;
+    color: #6464ac;
+    display: inline-block;
+    transition: all .5s ease;
+    padding-top: 7px
+}
+.features .feat .tracking{padding-top: 0 }
+/*
+.features .feat:hover .icon{transform: scale(1.1);box-shadow: 0px 0px 90px #ccc; background: #efeff7}
+*/
+/*
+.features .feat:hover .icon img{ border-radius: 50%}
+*/
+.features .feat h3{margin-top: 40px; color: #6464ac; font-weight: 600}
+.features .feat p{color: #6464ac;min-height: 100px}
+ /*--== End Features ==*/
+
+ /*--== Start Team ==*/
+.team{
+    background: #f7f7f7;
+}
+.team h2{
+    text-align: center;
+    color: #6464ac;
+}
+.team .member{
+    margin-bottom: 30px;
+    position: relative;
+    max-height: 340px
+}
+.team .member .img{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #6464ac;
+    
+}
+.team .member .img img{width: 100%; height: 100%}
+/*.team .member .img img{width: 261px; height: 261px; max-width: 261px; max-height: 261px;}*/
+.team .member .overlay{
+    width: 100%;
+    height: 100%;
+    background: #000000c2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 15% 0;
+    text-align: center;
+    color: #FFF;
+    opacity: 0;
+    transition: all .4s ease;
+    line-height: 1.9;
+    font-size: 16px;
+    border-radius: 50%;
+    word-wrap: break-word;
+    
+}
+.team .member:hover .overlay{animation: rotate .7s ease-in-out}
+.team .member .overlay:hover p{
+    animation: overlay_content_opacity 2.5s ease-in-out
+}
+.team .member .overlay:hover i{
+    animation: overlay_content_opacity 2.5s ease-in-out
+}
+
+/*Animation For Rotate OverLay*/
+@keyframes rotate {
+    0%{
+        transform: rotateY(180deg)
+    }
+    100%{transform: rotateY(360deg); p{opacity: 1}}
+} 
+/*Animation For Change Opacity Of Overlay Content*/
+@keyframes overlay_content_opacity {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+.team .member .overlay p{width: 72%; margin: auto; margin-bottom: 5%}
+.team .member .img:hover .overlay{opacity: 1}
+.team .member .social a {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+.team .member .social a i{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #FFF;
+    padding: 5px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: all .4s ease;
+    background:inherit;   
+}
+.team .member .social .facebook:hover i{
+    background: #4267B2;
+    border-color: #4267B2
+}
+.team .member .social .twitter:hover i{
+    background: #1DA1F2;
+    border-color: #1DA1F2
+}
+.team .member .social .plus:hover i{
+    background: #C93B2A;
+    border-color: #C93B2A
+}
+.team .member .info {color: #27ab7b; padding: 10px; text-align: center}
+.team .member .info h3{margin-top: 0}
+/*--==== End Team ==========*/
+
+/*--==== Start Contact US =====-*/
+.contact-us {background: #6464ac;}
+.contact-us h2{color: #FFF;}
+.contact-us form{margin: auto}
+.contact-us textarea{height: 170px;margin-bottom: 5px;max-height: 170px; width: 100%; resize: none;}
+.contact-us input{display: block; padding: 5px; border-radius: 5px; border: 1px solid #CCC; width: 100%; outline: none }
+.contact-us input[type='text']{display: inline; width: 49%; margin-top: 10px; margin-bottom: 10px;}
+.contact-us input[name='name']{margin-right: 6px}
+.contact-us input[type='submit']{
+    width: auto;
+    margin: 20px auto; 
+    background: #27ab7b;
+    color: #FFF;
+    border-color: #27ab7b;
+    outline: none;
+    padding: 7px 15px;
+    font-size: 20px;
+    transition: all .4s ease;
+} 
+.contact-us input[type='submit']:hover{background: #2bc18b}
+/*--==== End Contact US ====-*/
+
+/*--==== Start Profile Page =====-*/
+header.profile{
+    height: 70vh;
+    margin-top: 116px;
+    background: #6464ac;
+    color: #FFF;
+    padding: 20px 0 
+}
+header.profile .member-info{
+    outline: 1px solid #FFF;
+    background: radial-gradient(#cccaca -137%, #6464ac 76%),
+                radial-gradient(#cccaca -137%, #6464ac 76%);
+    padding: 20px 0;
+    color: #eceaeac7
+}
+header.profile .member-info .img{
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    border: 2px solid #FFF;
+    background: #FFF;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+header.profile .member-info .img img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    max-height: 160px;
+}
+header.profile .member-info .member-location {
+    display: block;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+.member-location > div{
+    display: flex;
+    margin-bottom: 10px;
+}
+.member-location i {
+    font-size: 22px;
+    width: 50px;
+    float: left;
+    display: inline-block;
+    margin-right: 5px
+     
+ }
+header.profile .member-info .edit-profile > button{
+    padding: 10px;
+    background: inherit;
+    border: 1px solid #FFF;
+    margin-bottom: 10px;
+    margin: 20px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #eceaeac7
+}
+header.profile .member-info .edit-profile > button > img {display: inline-block}
+.members-list{/*max-height: 75vh; overflow:auto; */padding: 10px}
+.members-list header{
+    background: #6464ac;
+    color: #FFF;
+    padding: 10px;
+    margin-right: 4px;
+    text-align: center
+}
+.members-list header h2{display: inline-block; margin: 0; padding: 0; margin-left: 10px }
+.members-list header img{vertical-align: top;}
+.members-list .person-info{background: #FFF; padding: 5px 20px; margin-bottom: 10px; border: 1px solid #6464ac26; margin-right: 4px}
+.members-list .person-info a{text-decoration: none; color: #000}
+.members-list .person-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #6464ac;
+    max-width: 50px;
+    max-height: 50px;
+}
+.members-list .person-info .name{
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6464ac;
+    display: inline-block
+}
+.add-post-profile{margin-top: 0 !important}
+
+
+
+
+
+/*=== Start Form Upate User Data ===*/
+#form-update_prof .form-group{width: 45%; margin-right: 10px; display: inline-block}
+#form-update_prof .form-control{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: none;
+    color: #6464ac;
+    border-radius: 0;
+    
+}
+#form-update_prof .form-control:focus{ 
+    border-color: #66afe9;
+    border-bottom-width: 2px;
+    color: #66afe9
+}
+
+#form-update_prof .file-label{
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 10px;
+    font-size: 11px;
+    border: 1px solid #ddd;
+    color: #a5a1a1;
+    width: 42%;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.update-data{
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    display: inline-block
+}
+.updataBTN{
+    margin: 10px;
+    float: right
+}
+#form-update_prof .btn-lab{margin-left: 0}
+#form-update_prof #updateUserType{margin-bottom: 10px}
+#form-update_prof .country{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    background: none;
+    color: #6464ac;
+    font-size: 15px
+}
+/*=== Start Form Upate User Data ===*/
+/*--==== End Profile Page =====-*/
+
+
+
+/*--==== Start Time Line Page =====-*/
+/* ======== Start Add Post Section ====== */
+.time-line-bdy{background: #e2e1e1;}
+.clear{clear: both}
+.main-container{
+    width: 55%; 
+    margin:  auto; 
+    background: #FFF;
+    
+}
+.add-post{
+    margin-top: 106px;
+    padding-top: 10px;
+}
+.post{
+    background: #FFF;
+    margin-bottom: 20px
+}
+.add-post h2{
+    padding: 10px;
+    background: #6464ac;
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+}
+.add-post textarea{
+    width: 100%;
+    min-height: 60px;
+    height: auto;
+    resize: none;
+    padding: 8px;
+    border: none;
+    outline: none;
+    overflow-y:-webkit-paged-x
+}
+.add-post .img{
+    width: 100%;
+    height: 101px;
+}
+.add-post .img img{
+    max-width: 16%;
+    max-height: 100%;
+    margin-right: 5px;
+    display: inline-block
+}
+.add-post .inputs{
+    float: right;
+    width: 100%;
+    margin: 0 ;
+    text-align: right;
+    padding: 0px 10px 5px
+}
+.add-post input[name="number"]{
+    width: 120px;
+    border: 1px solid #6464ac;
+    background: #f7f7f7;
+    color: #5d5a5a;
+    padding: 4px 9px;
+    outline: none;
+    color: #6464ac;
+}
+.add-post input[name="number"]::placeholder{color: #c7c6c6}
+.radio{
+    display: inline-block;
+    margin: 0;
+    margin-right: 60px;
+}
+.radio li{
+    color: #AAAAAA;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+ 
+}
+.radio li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+.radio li label{
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 5px 47px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+.radio li .check{
+    display: block;
+    position: absolute;
+    border: 2px solid #AAAAAA;
+    border-radius: 100%;
+    height: 21px;
+    width: 21px;
+    top: 7px;
+    left: 20px;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+ li .check::before {
+      display: block;
+      position: absolute;
+      content: '';
+      border-radius: 100%;
+      height: 11px;
+      width: 11px;
+      top: 3px;
+      left: 3px;
+      margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+input[type=radio]:checked ~ .check {
+  border: 2px solid #6464ac;
+}
+input[type=radio]:checked ~ .check::before{
+  background: #6464ac;
+}
+input[type=radio]:checked ~ label{
+    color: #6464ac;
+    font-weight: 600
+}
+input[type=radio]:checked ~ .check {
+  border: 2px solid #6464ac;
+}
+input[type=radio]:checked ~ .check::before{
+  background: #6464ac;
+}
+input[type=radio]:checked ~ label{
+  color: #6464ac;
+}
+.add-post button,
+.add-post .lable{
+    background: #6464ac;
+    padding: 5px 10px;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 0
+}
+.add-post .inputs button{width: 70px; margin-left: 10px}
+.add-post .btns button,
+.add-post .btns .lable,
+.add-post .add-location{
+    width: 32.866%;
+    padding: 10px;
+    margin-top: 0 px;
+    background: #6464ac;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 0
+}
+.add-post .add-location{padding: 12px}
+
+.add-post .btns button i,
+.add-post .btns .lable i{
+    font-size: 18px;
+    margin-right: 7px
+}
+.add-post .btn-primary:hover,
+.add-post .btn-primary:focus,
+.add-post .btn-primary:active,
+.add-post .btns button:hover,
+.add-post .btns .lable:hover{background: #4a4a7e}
+.btn{vertical-align: bottom}
+/* ======= End Add Post Section*/
+
+/* ======= Start Post Preview Section*/
+.post-preview{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 50vh;
+}
+.post-preview p{display: inline-block}
+.post-preview a{text-decoration: none; color: #000}
+.post-preview header{
+    padding: 10px; 
+    position: relative;
+    background: #f5f5f5;
+    display: inline-block;
+    width: 100%;
+}
+.post-preview header .person-info{
+    float: left;
+    width: 60%;
+    position: relative !important;
+}
+.post-preview header .person-info .timelocation{
+    position: absolute;
+    top: 25px;
+    left: 57px;
+}
+.post-preview header .person-info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    border: 1px solid #6464ac;
+    max-width: 48px;
+    max-height: 48px;
+}
+.post-preview header .person-info .name{
+    float: left;
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #365899;
+}
+.post-preview header .person-info span{
+    font-size: 12px;
+    color: #616770;
+    font-family: sans-serif;
+    padding-right: 5px;
+    margin: 0
+}
+.post-preview header .post-edit{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.post{position: relative}
+/*.post .post-opti-down .dropdown-menu{
+    top: 30px;
+    right: 10px;
+    left: inherit;
+    display: inline-block;
+    width:  150px;
+    max-width: 300px;
+    float: right;
+    display: none
+}*/
+.post .dropdown{display: inline-block}
+.post .dropdown-menu{right: 0; left: unset}
+.post-preview header .post-edit p{
+    color: #b0aaaa;
+    margin-right: 10px;
+    font-weight: 600;
+    letter-spacing: 1px
+}
+.post-preview .post-content{
+    width: 100%;
+    max-height: 300px;
+    /*direction: rtl;*/
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px
+}
+.post-preview .post-img{
+    width: 100%;
+    overflow-x: hidden;
+    /*max-height: 400px;*/
+    padding: 10px
+}
+.post-preview .post-img img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 500px;
+    display: block !important;
+    margin: auto;
+    border: 1px solid #efebeb;
+
+}
+.post-preview .post-info{
+    width: 100%;
+    padding: 10px;
+    
+}
+.post-preview .post-info p {
+    color: #6464ac;
+    margin-right: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.post-preview .post-info .number{ float: left}
+.post-preview .post-info .location{ float: right}
+.post-preview .post-option{
+    width: 100%;
+    margin-top: 20px;
+    border-top: 3px solid #dad8d8
+}
+.post-preview .post-option button {
+    width: 49%;
+    padding: 10px;
+    border: none;
+    background: #FFF;
+    color: #6464ac;
+    font-size: 17px;
+    outline: none
+}
+.post-preview .post-option button:first-of-type{border-right: 1px solid #dad8d8}
+.post-preview .post-option button:last-of-type{border-left: 1px solid #dad8d8; margin-left: -4px}
+.post-preview .post-option button:active,
+.post-preview .post-option button:visited{background: #e2e1e1}
+/* ======= End Post Preview Section*/
+/*--====  End Time Line Page =====-*/
+
+
+/* ==== Start chat Page */
+.chat-page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to right, #4a5a6c, #405062);
+    margin-top: 106px; 
+}
+/*.chat-page*/ .person-list{
+   /* max-height: 75vh;
+    overflow:auto;*/
+    padding: 10px; 
+    background: #363e47;
+    border-radius: 20px 0 0 20px
+}
+/*.chat-page*/ .person-list .person-info{
+    background: #363e47;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c3c3cb33;
+    margin-right: 4px;
+    
+}
+/*.chat-page*/ .person-list .person-info a{text-decoration: none; color: #000}
+/*.chat-page*/ .person-list .person-info a:focus{outline: none}
+/*.chat-page*/ .person-list .person-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #6464ac;
+    max-width: 50px;
+    max-height: 50px;
+}
+/*.chat-page*/ .person-list .person-info .name{
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6464ac;
+    display: inline-block
+}
+
+/*.chat-page*/ .chat-box{
+/*
+    border: 1px solid #6464ac;
+*/
+    background: #f7f7f7;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    background: url(background.jpg);
+    
+} 
+.chat-page .chat-box header{
+    padding: 10px;
+    height: 70px;
+    color: #6464ac;
+    border-bottom: 1px solid #cecece;
+    background: #E9E7E7;
+    border-radius: 15px 15px 0 0;
+}
+.chat-page .chat-box header h3{
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+.chat-page .chat-box .chat-body{
+    height: auto;
+    padding: 15px;
+}
+.chat-body .recived-msg {
+    display: block; 
+    max-width: 100%;
+    float: left;
+    overflow: hidden
+}
+.chat-body .reciver-img{
+    width: 50px;
+    height: 50px; 
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block; 
+    float: left;
+    border: 1px solid #6464ac;
+    position: relative;
+    z-index: 4
+}
+
+.chat-body .msg-rec-content{
+    display: inline-block;
+    background: #E9E7E7;
+    padding: 10px 15px ;
+    margin-left: 10px;
+    line-height: 1.7;
+    word-spacing: 2px;
+    font-family: tahoma;
+    height: auto;
+    color: #504e4e;
+    border: 1px solid #cfcfcf;
+    max-width: 75%;
+    margin-bottom: 10px;
+    position: relative
+ /* -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 75%, 75% 75%, 1% 76%, 2% 45%, 2% 24%);
+clip-path: polygon(0 1%, 100% 0%, 100% 75%, 75% 75%, 1% 76%, 2% 45%, 2% 24%);*/
+    
+}
+
+
+.chat-body .sended-msg {
+    display: block;
+    max-width: 100%;
+    float: right;
+    overflow: hidden
+}
+.chat-body .sender-img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+    border: 1px solid #6464ac;
+    position: relative;
+    z-index: 4
+}
+.chat-body .msg-sended-content{
+    display: inline-block;
+    background: #6464ac /*#27ab7b*/;
+    padding: 10px;
+    margin-right: 10px;
+    line-height: 1.7;
+    word-spacing: 2px;
+    font-family: tahoma;
+    height: auto;
+    color: #FFF;
+    border: 1px solid #eae9e9;
+    max-width: 75%;
+    float: right;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1
+/*
+-webkit-clip-path: polygon(0% 0%, 100% 0, 98% 33%, 98% 43%, 98% 55%, 99% 75%, 0% 75%);
+clip-path: polygon(0% 0%, 100% 0, 98% 33%, 98% 43%, 98% 55%, 99% 75%, 0% 75%)
+           
+*/
+}
+
+.chat-body .msg-sended-content:after{
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f7f7f7;
+    position: absolute;
+    right: -41px;
+    top: -4px;
+    z-index: 2;
+    background: url(background.jpg);
+}
+
+.chat-body .msg-rec-content:after{
+    content: " ";
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    border-radius: 50%;
+    background: #f7f7f7;
+    position: absolute;
+    left: -41px;
+    top: -4px;
+    z-index: 2;
+    background: url(background.jpg);
+}
+
+.chat-controls{
+    background: #FFF;
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    border-top: 1px solid #DDD;
+}
+.chat-controls .msg-typing{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    
+}
+
+/*.chat-controls input[type='submit']{
+    width: 10%;
+    background: #27ab7b;
+    color: #FFF;
+    border-color: #27ab7b;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    transition: all .4s ease;
+    border-radius: 0;
+    margin-left: 3px
+} 
+.chat-controls input[type='submit']:hover{background: #2bc18b}*/
+.chat-controls button{
+    display: inline-block;
+    width: 49px;
+    float: right;
+    margin-top: 3px;
+    border: none;
+    background: transparent;
+    outline: none;        
+}
+.chat-controls button:active img {padding-left: 3px}
+/* ==== END chat Page */
+
+
+/* ==== START ALL USERS Page ===*/
+.member-controller{display: block; margin-bottom: 20px}
+.member-controller button{
+    padding: 17px;
+    font-size: 20px;
+    width: 20%;
+    background: #6464ac;
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
+}
+.member-controller button:active,
+.member-controller button:focus{outline: none}
+.member-controller .active{
+    background: #27ab7b;
+    outline: none
+}
+.member-controller button:first-of-type{margin-right: 10px}
+
+.all-pepole{display: none}
+.allusers {margin-top: 125px; margin-bottom: 25px}
+.allusers .person-list {background: #FFF; border-radius: 0; border: 1px solid #c5c5c5}
+.allusers .person-list .person-info{
+    background: #f6f7f9;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+    margin-right: 4px;
+}
+.no-frinds {margin-bottom: 0 ! important}
+ allusers .name{color: #6464ac !important}
+ .add_member{
+    float: right;
+    background: #6464ac;
+    border: none;
+    color: #FFF;
+    padding:10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+    margin-right: 5px;
+    min-width: 17%;
+    width: auto;
+}
+ .add_member:hover,
+ .add_member:active{background: #565694}
+.allusers button.show_profile{
+    color: #fff;
+    float: right;
+    background: #6464ac;
+    border: none;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+}
+
+/* ==== END ALL USERS Page ======*/
+
+
+/* ==== Start Other Users Profile Modal ====== */
+
+.user_prof_model{margin: 10px 0}
+.user_prof_model .prof_info{display: inline-block; width: 100%; border-bottom: 2px solid #eee; padding-bottom: 18px;}
+.user_prof_model .member-info{
+    background: radial-gradient(#cccaca -137%, #6464ac 76%),
+                radial-gradient(#cccaca -137%, #6464ac 76%);
+    color: #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+.user_prof_model .member-info .img{
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 2px;
+}
+.user_prof_model .member-info img{
+   
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 7px;
+    margin: auto;
+    border: 2px solid #FFF;
+    background: #FFF;
+   
+}
+.user_prof_model .member-info h2{margin-top: 0}
+
+.user_prof_model .member-location i{font-size: 22px; margin-right: 10px; float: none}
+.user_prof_model .member-location span{font-size: 22px}
+.user_prof_model .post-preview {min-height: inherit}
+.user_prof_model .no_posts {
+    display: block;
+    padding: 10px;
+    background: #f7f7f7;
+    text-align: center;
+    color: #999;
+}
+/* ==== end Other Users Profile Modal ====== */
+
+/* ==== Start Location Page  ====== */
+.map-section{
+    margin-top: 120px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+#map {
+  height: 550px;
+  width: 100%;
+  border: 2px solid #c5c5c5;
+}
+.map-section .msgAlert{
+    background: #FFF;
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #c5c5c5;
+    max-width: 100%
+    
+}
+.map-section .msg-content {
+    background: #f6f7f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+}
+/* ==== End Location Page  ====== */
+
+/*--==== Start Footer ====-*/
+footer{background: #EFEFEF; color: #6464ac; padding-top: 1%}
+footer .copyright{border-right: 4px solid #6464aca3; height: 145px}
+footer .copyright a{color: #6464ac}
+footer .copyright a.home{display: block; font-size: 25px;text-decoration: none;}
+footer .copyright a.home span{font-weight: bold}
+footer .copyright p{font-size: 20px; margin-top: 20px}
+
+footer .sitemap{border-right: 4px solid #6464aca3; display: inline-block; text-align: left; height: 145px}
+footer .sitemap ul{display: inline; padding: 0; margin: 0}
+footer .sitemap ul li{display: inline-block; float: left; width: 50%;padding: 5px; color: #6464ac; margin: 0;}
+footer .sitemap ul li a{font-size: 18px; padding: 5px; color: #6464ac}
+
+footer .social a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 7px;
+    text-align: left
+}
+footer .social a i{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #6464ac;
+    padding: 5px;
+    border: 2px solid #6464ac;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    transition: all .4s ease;
+    background: inherit;
+    display: inline-block
+}
+footer .social a p{display: inline; color: #6464ac; font-size: 20px; margin-left: 5px}
+footer .social .facebook:hover i{background: #4267B2; color: #FFF; border-color: #4267B2}
+footer .social .twitter:hover i{background: #1DA1F2; color: #FFF; border-color: #1DA1F2}
+footer .social .plus:hover i{background: #C93B2A; color: #FFF; border-color: #C93B2A}
+footer .social p.copyright{display: none}
+footer .designed_by {padding: 10px; background: #DDD; font-size: 25px}
+footer .designed_by a{text-decoration: none; color: #337ab7}
+footer .designed_by a:hover{text-decoration:underline;}
+
+
+
+.btn-down{cursor: pointer; font-size: 2.333333em;}
+/*--==== End Footer ====-*/
+
+
+
+/*===========================================
+            Start Button Scrool Top
+============================================*/
+.scroll-top{
+    width: 50px;
+    height: 50px;
+    background: #FFF;
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+    color: #6464ac;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer; border: 2px solid #6464ac;
+    transition: all .5s ease-in-out;
+    display: none
+}
+/*===== End  Button Scroll Top ====*/
+
+/* ============= Start Models ============== */
+
+#userType{display: inline}
+.modal-header{color: #6464ac}
+.modal label{color: #6464ac }
+/*
+.modal-content{background-image: linear-gradient(to right, #27ab7b, #83be4d); color: #FFF}
+*/
+.modal-footer .btn-primary{background: #27ab7b;border-color:#27ab7b}
+.modal-footer .btn-primary:hover,
+.modal-footer .btn-primary:focus{background: #2bc18b; border-color:#2bc18b }
+.model-signup .form-group{display: inline-block; width: 49%; margin-bottom: 10PX}
+.model-signup .full-width{width: 99%}
+.model-signup .form-group input{color: #484894}
+.model-signup .form-group input::placeholder{color: #484894}
+.modal  .btn-lab{
+    color: #FFF;
+    border: 1px solid #6464ac;
+    background: #6464ac;
+    /*vertical-align: top;*/
+    margin-bottom: 10px;
+    margin-left: 30px
+}
+
+.modal .country{
+    padding: 7px;
+    border-radius: 5px;
+    background: #6464ac;
+    color: #FFF;
+}
+.modal .radio{width: 36%; margin-bottom: 10px; margin-left: -50px}
+
+/* ============= End Models ============== */
+
+
+
+/* ============= Start Framework =============*/
+
+.under-line-center{ 
+    text-transform: uppercase; 
+    color: #484894;
+    text-align: center;
+    margin-bottom: 5%
+}
+.under-line-center:after{
+    content: " ";
+    height: 4px;
+    width: 70px;
+    background: rgb(163, 163, 199);    margin-left: 0;
+    display: block;
+    margin: 5px auto;
+    text-transform: uppercase;
+
+}
+
+.padding{padding-top: 4%; padding-bottom: 4%}
+.nicescroll-cursors{background-color: #484894 ! important; width: 8px ! important;}
+.nicescroll-rails{z-index: 5000 ! important}
+
+
+img{display: inline-block ! important}
+/*
+.hdn{display: none !important}
+*/
+.form-control {
+    padding: 6px 5px;
+    font-size: 15px
+}
+.file-label{
+    width: auto;
+    display: block;
+    color: #6464ac;
+    background: #CCC;
+    padding: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 0;
+    margin: 0l;
+}
+.error{
+    padding: 2px;
+    color: #ec3823;
+    font-weight: 600;
+}
+.error-pass{
+    font-weight: 600;
+    font-weight: 600;
+}
+#forgetPass{
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: blue
+}
+#forgetPass:hover,
+#forgetPass:focus,
+#forgetPass:active{border-bottom: 1px solid blue
+}
+input:disabled {
+    background: #dddddd !important;
+    border-color: #dddddd !important;
+    color: #5a5a5a!important;  
+}
+button:disabled {
+    background: #dddddd !important;
+    border-color: #dddddd !important;
+    color: #5a5a5a!important;    
+}
+
+
+
+.margnLeft{
+    margin-left: 12.5% 
+}
+
+
+  /* Set the size of the div element that contains the map */
+
+/* ============= End Framework =============*/
+

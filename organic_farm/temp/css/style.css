@@ -1,0 +1,154 @@
+/* Active link background*/
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #E41B17
+}
+
+
+/*nav links color*/
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px
+}
+
+
+/* NavBar Brand*/
+
+.navbar-inverse .navbar-brand {
+    padding-top: 20px;
+    color: #9d9d9d;
+    font-size: 25px;
+    transition: color .5s ease
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #FFF
+}
+
+.navbar-inverse .navbar-brand>span {
+    color: #E41B17
+}
+
+.navbar-inverse .navbar-brand:hover .navbar-inverse .navbar-brand span {
+    color: #9d9d9d
+}
+rder: none
+}
+
+************************************************************
+************************************************************ 
+.navbar-fixed-top {
+    display: block
+}
+
+#slider {
+    height: 700px;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    color: #FFF;
+    margin-top: 55px;
+}
+
+#slider .video {
+    margin-top: 120px;
+    margin-left: 30%;
+    width: 40%;
+    background: rgba(0, 0, 0, .4);
+    height: 280px;
+    max-height: 300px;
+    padding: 40px;
+    overflow: hidden
+}
+
+#slider .video h2 {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 27px
+}
+
+#slider .video p {
+    margin-bottom: 60px;
+    font-family: Arial
+}
+
+#slider .video a {
+    font-family: Arial;
+    color: #FFF;
+    text-decoration: none;
+    border-bottom: 1px solid #E5A346;
+    transition: all .5s;
+    font-size: 12px
+}
+
+#slider .video a:hover {
+    color: #03A9F4;
+}
+
+
+
+
+/* =====================================
+            Start  Services
+   ======================================*/
+
+#our-services section{margin-bottom:50px;text-align: center;height: 100px}
+#our-services header{text-align: center;margin-bottom: 30px}
+#our-services section .glyphicon{float: left;width:15% ;height:50%;font-size: 36px;padding: 8px; transition: all .5s ease-in-out; }
+#our-services section:hover .glyphicon{background-color: #095A9E ;color:#FFF ;}
+#our-services section div{float:left;width:75% ;text-align: left;margin-left: 10px}
+#our-services section div h3 {margin: 0 0 5px 3px}
+#our-services section div p {font-size:13px;line-height:1.6}
+
+
+
+
+/* =====================================
+            Start  Gallery
+   ======================================*/
+
+#gallery {height: 700px;width:1349px;margin: 50px 0;text-align: center;}
+#gallery h1 {margin:10px 0 30px}
+#gallery button {padding:10px 20px;background-color:#FFF;border:1px solid #0F4DA4;margin:10px}
+#gallery .active {background-color:#0F4DA4;color:#FFF}
+#gallery section {margin-top: 50px}
+#gallery section .row .main{height: 250px;margin-bottom: 30px;overflow: hidden;max-height: 250px;}
+#gallery section .row .main .image {width:100%;height:100%;transition:all 2s ease-in-out;background-position:center;max-width: 100%;overflow: hidden}
+#gallery section .row  .main .image:hover { transform: scale(1.1);overflow: hidden}
+#gallery section .row  .main .image:hover .info{visibility: visible;transition: all .5s ease .2s;transform: scale(1);max-width: 100%}
+#gallery section .row  .main .image .info{position:absolute;bottom: 0%;left:0 ;width:100%;height: 100%;color:#FFF;background:rgba(255, 209, 88, 0.62);visibility: hidden;transform: scale(0);max-width: 100%}
+#gallery section .row  .main .image .info h1 {margin:40px 0}
+#gallery section .row  .main .img1{background-image: url(../img/g1.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img2{background-image: url(../img/g2.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img3{background-image: url(../img/g3.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img4{background-image: url(../img/g4.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img5{background-image: url(../img/g5.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img6{background-image: url(../img/g6.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img7{background-image: url(../img/g7.jpg);background-repeat: no-repeat}
+#gallery section .row  .main .img8{background-image: url(../img/g8.jpg);background-repeat: no-repeat}
+
+/* =====================================
+            Start  Our Team
+   ======================================*/
+
+#our-team{width:100%;height: 600px;background-color:#FFC155}
+#our-team h1{color:#FFF;text-align:center;padding:70px 0 20px }
+#our-team .row .person {background: #FFF;margin-bottom: 20px;border: 1px solid} 
+#our-team .row  .person .person-image {width: 100%;height: 50%;}
+#our-team .row  .person .person-image img {width:100%;height:100%}
+#our-team .row  .person .person-info {width: 100%;height: 22%;border-bottom: 1px solid;padding: 20px}
+#our-team .row  .person ul {width: 100%;height: 28%; display: inline;padding:10px}
+#our-team .row  .person ul li {display:inline-block;border-right:1px solid;padding: 5px}
+#our-team .row  .person ul li:last-of-type {border-right:none}
+#our-team .row  .person ul li a {width:50px;height: 50px; display:block;overflow: hidden; position: relative; }
+#our-team .row  .person ul li a i{ transition: all .6s ease-in-out ; }
+#our-team .row  .person ul li a .norm{position: absolute;left:0;top: 0px;color:#333}
+#our-team .row  .person ul li a .hvr{position: absolute;left:0;top: 60px;}
+#our-team .row  .person ul li a:hover .hvr{position: absolute;left:0;top: 0px}
+#our-team .row  .person ul li a:hover .norm{position: absolute; top:-60px }
+#our-team .row  .person ul li a .twi{color:#2BA8E0}
+#our-team .row  .person ul li a .google{color:#DC4A38}

@@ -1,0 +1,333 @@
+/*=====================================================
+   Smart Phones And Taplets = Extra Small Screen[XS] Phone
+  =====================================================*/
+
+@media (max-width: 767px) 
+{
+    
+    
+    
+ 
+    .nav-top{min-height:auto}
+    .search form {
+        width: 100%; 
+    }
+    .txxt-center-xs{text-align: center}
+    .registration{
+        margin-bottom: 10px;
+        text-align:center;
+    }
+    .registration a{padding: 0; margin: 0}  
+    .registration .login, .registration .signin{border-radius: 5px}
+   
+    .nav-top .social a{margin-right: 3px; float: right}
+    
+    .nav-icon > li {display: inline-block}
+    .navbar-inverse .navbar-nav>li>a {padding-top: 10px; padding-bottom: 10px;}
+    .navbar-inverse .navbar-nav>li.profile{display: inline}
+    .navbar-nav .open .dropdown-menu{
+        position: initial;
+        border: 1px solid #7f7fbf;
+        width: 90%;
+        background: #3c3c6f;
+        margin-top: 15px;
+    }
+    
+    .navbar-inverse .navbar-nav>li.dropdown{display: inline; position: relative}
+    .navbar-inverse .navbar-nav>li.dropdown > a{display: inline; position: absolute; top: -31px}
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a{color: #b0c4d8}
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider{background: #FFF; width: 72%; margin-left: 10px;}
+    .navbar-inverse .navbar-nav > li:hover :after,
+    .navbar-inverse .navbar-nav > li.active :after{top: 36px}
+    .navbar-inverse .navbar-nav > li.profile:hover :after,
+    .navbar-inverse .navbar-nav > li.profile :after{top: 63px}
+    .Hdr-home { height: 640px ! important; margin-top: 106px; max-height: inherit; 
+        background-image: url('../img/bannerMob.jpeg');}
+    .Hdr-home  .slidshow .slider{ 
+        margin-top: 20px;
+        height: 250px ! important;
+        left: 0px;
+        width: 90%;
+        top: 0px;
+        margin-bottom: 100px 
+    }
+    .slider>.navContainer>.leftClass {
+    left: -22px ! important;
+    }
+    .slider>.navContainer>.rightClass {
+    right: -22px ! important;
+    }
+    .Hdr-home  .caption{margin-top: 65px;}
+    .Hdr-home  .caption button{width: 44%;}
+    .Hdr-home  .caption button.play-store{font-size: 13px; }
+    .Hdr-home  .caption button.play-store img{width: 25%; height: 50%}
+    .Hdr-home  .caption button.iphone{font-size: 17px;/* background: url('../img/iosMob.png') no-repeat*/}
+    .Hdr-home  .caption button.iphone img{width: 40%; height: 50%}
+    .Hdr-home  .caption .social{margin-left: 0}
+    .after-m:after{
+        content: " ";
+        width: 5px;
+        height: 100px;
+        background: #484894;
+        display: inline-block;
+        position: absolute;
+        left: 20px
+    }
+    
+   /* .slider>.navContainer>.leftClass{left: -20px}
+    .slider>.navContainer>.rightClass{
+        left: 148px !important;
+        height: 97% !important;
+        width: 28px !important;
+    }*/
+    .slider>img{width: 39% !important}
+    .team .member .img{max-height: 250px; overflow: hidden; border-radius: 5px}
+    .team .member .img img{width: 100%;}
+   /* .team .member .img img{width: 200px; height: 200px; max-width: 261px; max-height: 261px;}*/
+    
+    @media (max-width: 550px) 
+    {
+        
+        
+        .team .member {max-height: 200px}
+        .team .member .overlay p{width: 100%; margin-bottom: 5px}
+        .team .member .overlay{
+            line-height: 1.3;
+            border-radius: 5px
+        }
+        .team .member .social a {
+            width: 30px;
+            height: 30px;
+        }
+        .team .member .social a i{
+            font-size: 15px;
+            padding: 5px;
+            border: 1px solid #FFF;
+            line-height: 20px;
+        }
+
+        .team .member .info h3{font-size: 11px; font-weight: 600}
+        .team .member .info h5{font-size: 10px}
+    }
+    
+    .team .margnLeft{margin-left: 0}
+   /* .team .row > div{margin-bottom: 0;max-height: 258px;}*/
+    
+    
+    .contact-us input:focus{border-color:#66afe9 }
+    .contact-us input[name='name']{margin-right: 1px}
+    
+    .Hdr-home  .icon{ width: 60px; height: 60px; font-size: 10px;padding: 5px; text-align: center; line-height: 60px}
+    /*.Hdr-home  .chatt{ left: 28%; bottom: -25px;}
+    .Hdr-home  .location{left: 51%; bottom: -25px}
+    .Hdr-home  .chatt-box{display: none ! important}
+    .Hdr-home  .location-box{display: none ! important}*/
+    footer .copyright{border-right: 0;margin-bottom: 20px; height: auto}
+    footer .sitemap{border-right: 0; height: auto; text-align: left}
+    footer .sitemap ul li {width:auto}
+    footer .social a{display: inline-block; margin: 10px 1px auto}
+    footer .social a p{display: none}
+    footer .copyright p{display: none}
+    footer .social p.copyright{margin-top: 20px; font-size: 20px; margin-bottom: 0; display: block}
+
+    
+
+    
+    /* Start Time Line Page*/
+    h2#userName{font-size: 20px}
+    .add-post .btns button, 
+    .add-post .btns .lable,
+    .add-post .add-location { width: 32.49%}
+    .add-post .img{text-align: left}
+    .post-preview header{padding: 5px}
+    .post-preview header .person-info img{ width: 40px; height: 40px}
+    .post-preview header .person-info .name{ font-size: 15px; margin: 0px 5px}
+    .post-preview header .post-edit img{width: 12px; height: 12px}
+    .post-preview .post-option i{font-size:  13px}
+    .post-preview header .person-info .timelocation{top: 17px; left: 47px; width: 100%;}
+    .btn-down {font-size: 28px; font-weight: bold;}
+    .post-preview .post-img img {height: auto; max-height: 300px;}
+    header.profile .member-info .edit-profile > button > img {
+        display: inline-block;
+        width: 22px;
+    }
+    
+    /* End Time Line Page*/
+    
+    
+    /* Start Model*/
+    .modal .radio{width: 70%; text-align: left; margin-left: -63px}
+    .model-signup form{text-align: center}
+    .modal .btn-lab {
+        margin-bottom: 0; 
+        margin-left: 0; 
+        width: 50%;
+        font-size: 13px;
+    }
+    .modal .country{
+        width: 48%;
+        font-size: 13px;
+    }
+    /* End Model*/
+    
+    
+    
+    header.profile{
+        height: auto;
+    }
+    .radio{
+        margin-right: 40px;
+    }
+    
+    
+    header.profile .member-info .edit-profile > button {
+        padding: 10px 5px;
+        margin: 15px 10px 0px;
+        font-size: 15px;
+        width: 40%;
+    }
+    
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+    .chat-controls .msg-typing{
+        width: 80%;
+    }
+    
+    .member-controller button{width: auto; padding: 10px 15px }
+    .person-list{padding: 2px}
+    .allusers .person-list .person-info{padding: 2px}
+    .person-list .person-info img{width: 35px; height: 35px}
+    .person-list .person-info .name{margin: 3px; font-size: 13px}
+    .allusers .add_member{margin-top: 2%; font-size: 10px; padding: 3px; border-radius: 3px}
+    .allusers button.show_profile{font-size: 10px; padding: 3px; border-radius: 3px; margin-top: 2%;}
+
+    
+    
+    
+    
+    
+    .modal-content-create-profile{text-align: center}
+    #form-update_prof .file-label{
+        padding: 10px 2px;
+        margin-bottom: -6px;
+
+    }
+    
+    
+    
+}
+
+
+
+/*=====================================================
+           Small Screens[SM]  Tablet
+  =====================================================*/
+
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .navbar .nav{margin-left: 0}
+    .navbar .signup{margin-right:0}
+    .navbar-inverse .navbar-nav>li>a{padding-left: 2px; padding-right: 2px;font-size: 13px}
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{margin-left: -20px;}
+    .navbar-inverse .navbar-brand{font-size: 20px}
+    .nav-icon li > a {    padding: 6px !important}
+    .nav-icon > li:hover :after, .nav-icon > li.active :after{top: 131%}
+    .Hdr-home  .caption{margin-top: 20px;}
+    .Hdr-home  .caption button{width: 40%; height: 100px}
+    .Hdr-home  .caption button:first-of-type{margin-left: 30px}
+    .Hdr-home  .caption .social{margin-left: 40%}
+    .Hdr-home  .icon{ width: 80px; height: 80px;}
+    .Hdr-home  .chatt{ left: 38%; bottom: -40px;}
+    .Hdr-home  .location{left: 51%; bottom: -40px; font-size: 25px}
+    .Hdr-home {height: 680px}
+    .Hdr-home  .slidshow{height: auto}
+    .Hdr-home  .slidshow .slider{ 
+        margin-top: 40px;
+        height: 250px ! important;
+        left: 0px;
+        width: 90%;
+        top: 0px;
+    }
+    
+     .team .member .overlay{font-size: 14px}
+    .margnLeft{margin-left: 0}
+    
+    /* Start Time Line Page*/
+    .main-container{
+        width: 80%; 
+        margin:  auto; 
+        text-align: center;
+    }
+    /* End Time Line Page*/
+    
+    .add-post .btns button, 
+    .add-post .btns .lable,
+    .add-post .add-location{
+        width: 32.8%;
+    }
+    
+    
+    header.profile{
+        height: auto;
+    }
+    
+    .add-post .btns button, 
+    .add-post .btns .lable,
+    .add-post .add-location{ width: 32.69%}
+    .add-post input[name="number"]{
+        margin-bottom: 10px;
+        margin-left: 10px
+    }
+     .radio{
+        margin-right: 40px;
+    }
+
+}
+
+
+/*=====================================================
+          Medium Screens[Md] Laptop sm
+  =====================================================*/
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+    .navbar .nav{margin-left: 0}
+    .navbar-inverse .navbar-nav > li > a{ font-size: 16px}
+    .nav > li > a{padding: 10px 10px;}
+    .Hdr-home  .caption button{width: 42%;}
+    .Hdr-home  .icon{ width: 90px; height: 90px;}
+    .Hdr-home  .chatt{ left: 39%; bottom: -45px;}
+    .Hdr-home  .location{left: 51%; bottom: -45px;font-size: 28px}
+    .contact-us input[name='name']{margin-right: 3px}
+    .Hdr-home  .slidshow .slider{ 
+        height: 280px ! important;
+        left: 60px;
+        width: 90%;
+        top: 150px;
+    }
+    
+    
+    .team .member .overlay{font-size: 14px}
+    .add-post .btns button, 
+    .add-post .btns .lable,
+    .add-post .add-location{ width: 32.7666%}
+    .radio{
+        margin-right: 40px;
+    }
+
+}
+
+
+/*=====================================================
+          Larg Screens[Lg] Laptop Lg
+  =====================================================*/
+@media (min-width: 1200px)
+{
+
+    .navbar .login{margin-left: 80px}
+    .navbar .signup{margin-left: 10px}
+}

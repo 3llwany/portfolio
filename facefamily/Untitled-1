@@ -1,0 +1,70 @@
+ /* var showOthersProfile = db.ref('/Users/' + other_id);//.orderByChild('userId').equalTo(id);
+              
+              showOthersProfile.once("value", snap => {
+                var other_user_name = snap.child("fullName").val();
+                var other_user_pic = snap.child("Img").val();
+                var other_user_pho = snap.child("userphone").val();
+
+                  $('#user_prof_model').prepend('<div class="row"><div class="col-sm-8 col-xs-12"><div class="member-info text-center" id="other_user_info"><div class="img"><img class="img-responsive center-block" id="other_user_img" src="'+ other_user_pic +'" style="width:50px; height:50px; border-raduis:50%"> </div><div class="member-name"><h2 id="other_user_name">'+ other_user_name +'</h2></div> <div class="member-location"><i class="fa fa-map-marker"></i><span>Cairo, Egypt</span><br><i class="fa fa-address-book-o fa-lg"></i><span id="other_sern_umber">' + other_user_pho +'</span></div></div></div></div>');
+                  
+                  //window.location = 'users_profile.html';
+              }); //End showOthersProfile*/
+           /*
+          //Return Other Users Posts in there Profile
+           //var retrPostData = db.ref('Posts/' + userId);
+            var retrPostData = db.ref('user_posts').orderByChild('aothurid').equalTo(id);
+            retrPostData.once("value", snap => {
+                var content = snap.child("PostContent").val();
+                var number = snap.child("PostNumber").val();
+                var time = snap.child("PostTime").val();
+                var type = snap.child("PostType").val();
+                var authorName = snap.child("postAothur").val();
+                var authorImg = snap.child("aothurImg").val();
+                var picture = snap.child("pic").val();
+                var id = snap.child("postId").val();
+                $('.other_profile_posts').;
+            }); // End function retrive User Profile posts Data from Databas*/
+            
+            
+              /* $('#close_user').click(function(){
+             $('#user_prof_model .row').remove();
+             $('.other_profile_posts .post').remove();
+         });
+         
+        $('#closeUser').click(function(){
+            $('#user_prof_model .row').remove();
+            $('.other_profile_posts .post').remove();
+        });
+         $('.modal').click(function(){
+            $('#user_prof_model .row').remove();
+            $('.other_profile_posts .post').remove();
+        });*/
+        
+        
+        
+        
+             retrurnAllUsers.on("child_added", snap => {
+         var name = snap.child("fullName").val();
+         var picture = snap.child("Img").val();
+        var user_id = snap.child("userId").val();
+         
+         
+
+         
+         
+         // Start Show Other users Profile
+        $('.show_profile').click(function (e) {
+            e.preventDefault;
+            var other_id = $(this).data("value");
+
+             alert(other_id);
+              //Show Other Users Profile
+            
+
+        });  //// End Show Other users Profile  
+         
+        
+        
+        
+        $('.allusers .usersList').prepend('<div class="person-info"><a href="#" data-value="' + user_id + '" data-toggle="modal" data-target="#editProfile" class="show_profile"> <img class = "img-responsive"src =' + picture + '" ><p class = "name" >' + name + '</p></a> <button class="show_profile" data-value="' + user_id + '" data-toggle="modal" data-target="#editProfile">Show Profile</button> <button class="add_member">Add</button> </div>');
+        
