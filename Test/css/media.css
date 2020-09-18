@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+/*=== Smart Phones  = Extra Small Screen[XS]===*/
+@media (max-width: 767px) 
+{   
+}
+
+/*=== Taplets Small Screens[SM] ====*/
+@media (min-width: 768px) and (max-width: 991px)
+{    
+}
+
+/*=== Laptop Medium Screens[Md] ====*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+
+}
+
+/*=== Disktop Larg Screens[Lg] ===*/
+@media (min-width: 1200px)
+{
+
+}
+ 
