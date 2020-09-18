@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="icon" href="">
+
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
@@ -19,56 +19,67 @@
 
 <body>
 
-    
-    
-    <script>
-        
-        function getMobileOperatingSystem() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-            // Windows Phone must come first because its UA also contains "Android"
-            if (/windows phone/i.test(userAgent)) {
-                var os = "Windows Phone"; 
-                return os;
-                alert(os);
-            }
 
-            if (/android/i.test(userAgent)) {
-                var os = "Android "; 
-                return os;
-                alert(os);
-            }
 
-            // iOS detection from: http://stackoverflow.com/a/9039885/177710
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                var os = "iOS "; 
-                return os;
-                alert(os);
-            }
-
-             var os = "unknown "; 
-                return os;
-                alert(userAgent);
-        
-        }
-        getMobileOperatingSystem();
-        alert(getMobileOperatingSystem());
-
-    </script>
 
     <h2>This Site Just For Testing</h2>
 
 
 
+    <video id="myVideo" width="300" controls height="200" autoplay="autoplay">
+        <source src="images/%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D9%84%D8%B7%D9%8A%D9%81%20%D8%BA%D8%A7%D8%B2%D9%8A%20%D9%88%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%AC%D8%A8%D8%A7%D8%B1%D9%8A.mp4" type="video/mp4" />
+    </video>
 
 
+    <script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+                var os = "Windows Phone";
+                return os;
+                alert(os);
+            }
+
+            if (/android/i.test(userAgent)) {
+                var os = "Android ";
+                return os;
+                alert(os);
+                var x = document.getElementById("myVideo");
+
+                function disableControls() {
+                    x.controls = false;
+                    x.load();
+                }
+
+                disableControls();
+
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                var os = "iOS ";
+                return os;
+                alert(os);
+            }
+
+            var os = "unknown ";
+            return os;
+            alert(userAgent);
+
+        }
+        getMobileOperatingSystem();
+        //alert(getMobileOperatingSystem());
+
+    </script>
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    
+
 </body>
 
 </html>
