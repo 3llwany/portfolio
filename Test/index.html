@@ -19,6 +19,7 @@
 
 <body>
 
+<<<<<<< HEAD
 
 
 
@@ -33,17 +34,32 @@
 
 
     <script>
+=======
+    
+<h2>This Site Just For Testing</h2>
+  <h1>You Are Flat hhhh ;) </h1>
+    
+    
+        
+    <script>
+        
+>>>>>>> 50118467c01ba77be5a5b0a8bb7730ccfaac592d
         function getMobileOperatingSystem() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
             // Windows Phone must come first because its UA also contains "Android"
             if (/windows phone/i.test(userAgent)) {
+<<<<<<< HEAD
                 var os = "Windows Phone";
+=======
+                var os = "Windows Phone"; 
+>>>>>>> 50118467c01ba77be5a5b0a8bb7730ccfaac592d
                 return os;
                 alert(os);
             }
 
             if (/android/i.test(userAgent)) {
+<<<<<<< HEAD
                 var os = "Android ";
                 return os;
                 alert(os);
@@ -56,15 +72,25 @@
 
                 disableControls();
 
+=======
+                var os = "Android "; 
+                return os;
+                alert(os);
+>>>>>>> 50118467c01ba77be5a5b0a8bb7730ccfaac592d
             }
 
             // iOS detection from: http://stackoverflow.com/a/9039885/177710
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+<<<<<<< HEAD
                 var os = "iOS ";
+=======
+                var os = "iOS "; 
+>>>>>>> 50118467c01ba77be5a5b0a8bb7730ccfaac592d
                 return os;
                 alert(os);
             }
 
+<<<<<<< HEAD
             var os = "unknown ";
             return os;
             alert(userAgent);
@@ -76,6 +102,23 @@
     </script>
 
 
+=======
+             var os = "unknown "; 
+                return os;
+                alert(userAgent);
+        
+        }
+        getMobileOperatingSystem();
+        alert(getMobileOperatingSystem());
+
+    </script>
+
+    
+    
+    
+    
+    
+>>>>>>> 50118467c01ba77be5a5b0a8bb7730ccfaac592d
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
