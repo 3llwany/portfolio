@@ -2,7 +2,7 @@
 
 $(function () {
     'use strict';
-     $("#myvideo")[0].setAttribute("playsinline", "");
+    // $("#myvideo")[0].setAttribute("playsinline", "");
     
       if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
             hypeDocument.showSceneNamed('IOS Video', hypeDocument.kSceneTransitionInstant);
