@@ -31,11 +31,11 @@
 
     <h2>This Site Just For Testing</h2>
 
-    <video id="myVideo" width="300" controls height="200" autoplay="autoplay">
+    <video id="myVideo" width="300" controls height="200" autoplay="autoplay" playsinline webkit-playsinline>
         <source src="images/video.mp4" type="video/mp4" />
     </video>
 
-    <button onclick=" disableControls()">clic</button>
+    
 
 
 
@@ -55,20 +55,20 @@
                 opeSys = "Android ";
                 alert(opeSys);
 
+            }
+
+            // iopeSys detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                opeSys = "IOS ";
+                alert(opeSys);
+                
+                
                 /////////////////
                 (function disableControls() {
                     x.controls = false;
                     x.load();
                 })();
-
-                opeSys = "Android ";
-                alert(opeSys);
-            }
-
-            // iopeSys detection from: http://stackoverflow.com/a/9039885/177710
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                opeSys = "iopeSys ";
-                alert(opeSys);
+                
             } else {
 
                 opeSys = "unknown ";
@@ -78,13 +78,6 @@
         })();
 
 
-
-        var x = document.getElementById("myVideo");
-
-        function disableControls() {
-            x.controls = false;
-            x.load();
-        }
 
     </script>
 
