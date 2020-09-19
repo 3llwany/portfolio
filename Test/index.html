@@ -15,12 +15,37 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    
-    
-        <style>
-     
-       video::-webkit-media-controls-fullscreen-button {
+
+
+    <style>
+        iframe:fullscreen {
+            border: none !important;
+            padding: 0 !important;
+            display: none
+        }
+
+        /* video::-webkit-media-controls-fullscreen-button {
             display: none !important;
+        }
+
+        video::-webkit-media-controls-enclosure-button {
+            display: none !important;
+        }*/
+
+        video::-webkit-full-screen {
+            width: 200px !important;
+            height: 400px !important;
+        }
+
+
+        #video-player:-webkit-full-screen {
+            width: 50%;
+            height: 50%;
+            background-color: black;
+        }
+
+        #video-player:-webkit-full-screen video {
+            width: 100%;
         }
 
     </style>
@@ -31,17 +56,50 @@
 
     <h2>This Site Just For Testing</h2>
 
-    <video id="myVideo" width="300" controls height="200" autoplay="autoplay" playsinline webkit-playsinline>
+   <!-- <video id="myVideo" width="300" controls height="200" autoplay="autoplay" playsinline webkit-playsinline>
         <source src="images/video.mp4" type="video/mp4" />
-    </video>
+    </video>-->
 
+    <button onclick="openFullscreen()">clic</button>
+
+
+    <script>
+        function playPause() {
+            var myVideo = document.querySelector('video');
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function goFullscreen() {
+            var myPlayer = document.getElementById('video-player');
+            myPlayer.webkitRequestFullscreen();
+        }
+
+    </script>
     
+    
+    
+    
+    
+    <div id="video-player">
+        <video src="images/video.mp4"></video>
+        <p><a href="javascript:playPause();">Play/Pause</a></p>
+    </div>
+   
 
+    <!-- 
+
+iframe width="400" height="300" src="https://www.youtube.com/embed/jG-4kBIDAzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-->
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
 
 </body>
 
