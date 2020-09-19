@@ -26,21 +26,18 @@
     </video>
 
     <button onclick=" disableControls()">clic</button>
-    
-    
-        
-    <script>
-        
 
-       
-       ( function getMobileOperatingSystem() {
+
+
+    <script>
+        (function getMobileOperatingSystem() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
             // Windows Phone must come first because its UA also contains "Android"
             if (/windows phone/i.test(userAgent)) {
 
                 var os = "Windows Phone";
-                var os = "Windows Phone"; 
+                var os = "Windows Phone";
                 return os;
                 alert(os);
             }
@@ -49,18 +46,15 @@
                 var os = "Android ";
                 return os;
                 alert(os);
-                 
+
                 /////////////////
                 var x = document.getElementById("myVideo");
-                function disableControls() {
+                (function disableControls() {
                     x.controls = false;
                     x.load();
-                }
+                })();
 
-                disableControls();
-                //////////////
-
-                var os = "Android "; 
+                var os = "Android ";
                 return os;
                 alert(os);
             }
@@ -68,7 +62,7 @@
             // iOS detection from: http://stackoverflow.com/a/9039885/177710
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 var os = "iOS ";
-                var os = "iOS "; 
+                var os = "iOS ";
                 return os;
                 alert(os);
             }
@@ -78,26 +72,26 @@
             alert(userAgent);
 
         })();
-        //alert(getMobileOperatingSystem());
-        
-     
-         var x = document.getElementById("myVideo");
-                function disableControls() {
-                    x.controls = false;
-                    x.load();
-                }
-               
+        alert(getMobileOperatingSystem());
+
+
+        var x = document.getElementById("myVideo");
+
+        function disableControls() {
+            x.controls = false;
+            x.load();
+        }
 
     </script>
 
 
 
 
-    
-    
-    
-    
-    
+
+
+
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
