@@ -24,13 +24,13 @@
             display: none
         }
 
-        /* video::-webkit-media-controls-fullscreen-button {
+        video::-webkit-media-controls-fullscreen-button {
             display: none !important;
         }
 
         video::-webkit-media-controls-enclosure-button {
             display: none !important;
-        }*/
+        }
 
         video::-webkit-full-screen {
             width: 200px !important;
@@ -39,13 +39,13 @@
 
 
         #video-player:-webkit-full-screen {
-            width: 50%;
-            height: 50%;
+            width: 200px;
+            height: 200px;
             background-color: black;
         }
 
         #video-player:-webkit-full-screen video {
-            width: 100%;
+            width: 200px;
         }
 
     </style>
@@ -56,15 +56,16 @@
 
     <h2>This Site Just For Testing</h2>
 
-   <!-- <video id="myVideo" width="300" controls height="200" autoplay="autoplay" playsinline webkit-playsinline>
+    <video id="myVideo" width="300" controls height="200" autoplay="autoplay" playsinline webkit-playsinline>
         <source src="images/video.mp4" type="video/mp4" />
-    </video>-->
+        <preference name="AllowInlineMediaPlayback" value="true" />
+    </video>
 
     <button onclick="openFullscreen()">clic</button>
 
 
     <script>
-        function playPause() {
+       /* function playPause() {
             var myVideo = document.querySelector('video');
             if (myVideo.paused)
                 myVideo.play();
@@ -76,24 +77,12 @@
             var myPlayer = document.getElementById('video-player');
             myPlayer.webkitRequestFullscreen();
         }
-
+*/
     </script>
     
     
     
     
-    
-    <div id="video-player">
-        <video src="images/video.mp4"></video>
-        <p><a href="javascript:playPause();">Play/Pause</a></p>
-    </div>
-   
-
-    <!-- 
-
-iframe width="400" height="300" src="https://www.youtube.com/embed/jG-4kBIDAzA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
--->
 
 
     <script src="js/jquery-3.2.1.min.js"></script>
