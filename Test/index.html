@@ -32,20 +32,18 @@
     <script>
         (function getMobileOperatingSystem() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            var opeSys;
 
             // Windows Phone must come first because its UA also contains "Android"
             if (/windows phone/i.test(userAgent)) {
 
-                var os = "Windows Phone";
-                var os = "Windows Phone";
-                return os;
-                alert(os);
+                opeSys = "Windows Phone";
+                alert(opeSys);
             }
 
             if (/android/i.test(userAgent)) {
-                var os = "Android ";
-                return os;
-                alert(os);
+                opeSys = "Android ";
+                alert(opeSys);
 
                 /////////////////
                 var x = document.getElementById("myVideo");
@@ -54,25 +52,22 @@
                     x.load();
                 })();
 
-                var os = "Android ";
-                return os;
-                alert(os);
+                opeSys = "Android ";
+                alert(opeSys);
             }
 
-            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            // iopeSys detection from: http://stackoverflow.com/a/9039885/177710
             if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                var os = "iOS ";
-                var os = "iOS ";
-                return os;
-                alert(os);
-            }
+                opeSys = "iopeSys ";
+                alert(opeSys);
+            } else {
 
-            var os = "unknown ";
-            return os;
-            alert(userAgent);
+                opeSys = "unknown ";
+                alert(opeSys);
+            }
 
         })();
-        alert(getMobileOperatingSystem());
+
 
 
         var x = document.getElementById("myVideo");
