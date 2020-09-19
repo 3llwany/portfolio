@@ -39,56 +39,6 @@
 
 
 
-    <script>
-        (function getMobileOperatingSystem() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            var opeSys;
-
-            // Windows Phone must come first because its UA also contains "Android"
-            if (/windows phone/i.test(userAgent)) {
-
-                opeSys = "Windows Phone";
-                alert(opeSys);
-            }
-
-            if (/android/i.test(userAgent)) {
-                opeSys = "Android ";
-                alert(opeSys);
-
-            }
-
-            // iopeSys detection from: http://stackoverflow.com/a/9039885/177710
-            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                opeSys = "IOS ";
-                alert(opeSys);
-                
-                
-                /////////////////
-                (function disableControls() {
-                    x.controls = false;
-                    x.load();
-                })();
-                
-            } else {
-
-                opeSys = "unknown ";
-                alert(opeSys);
-            }
-
-        })();
-
-
-
-    </script>
-
-
-
-
-
-
-
-
-
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
