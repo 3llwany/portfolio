@@ -32,7 +32,8 @@
     <script>
         
 
-        function getMobileOperatingSystem() {
+       
+       ( function getMobileOperatingSystem() {
             var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
             // Windows Phone must come first because its UA also contains "Android"
@@ -76,8 +77,7 @@
             return os;
             alert(userAgent);
 
-        }
-        getMobileOperatingSystem();
+        })();
         //alert(getMobileOperatingSystem());
         
      
