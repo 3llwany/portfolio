@@ -21,7 +21,11 @@
         iframe:fullscreen {
             border: none !important;
             padding: 0 !important;
-            display: none
+            display: 
+        }
+        
+        :not(:root):fullscreen {
+            display: none ! important
         }
 
         video::-webkit-media-controls-fullscreen-button {
