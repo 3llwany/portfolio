@@ -1,0 +1,274 @@
+
+.no-padding{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+h1{
+    color: #c1c7cd;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+h2{
+    color: #337ab7;
+    font-weight: bold;
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-bottom: 20px
+}
+h3{
+    color: #afafaf;
+    font-weight: bold;
+    word-spacing: 5px;
+    font-size: 14px
+}
+.teck-skills h3{
+    color: #337ab7;
+    word-spacing: 5px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 17px
+}
+
+hr{
+    background: #4d7379;
+    height: 1px;
+    border: none;
+}
+
+
+
+
+
+
+
+body{background: #234460}
+
+.navigation{
+    display: block;
+    height: 14px;
+    background: #478bd4;
+}
+
+.personal-info{
+    background: #234460;
+    padding: 20px;
+    height: 100%;
+    display: inline-block;
+    color: #777
+}
+.profile-pic{display: block; width: 100%}
+.profile-pic {
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin: 10px auto;
+}
+.profile-pic  img {
+    max-width: 100%;
+    filter: none;
+    transition: all .4s ease;
+    cursor: pointer
+}
+.profile-pic  img:hover{
+    filter: saturate(0.5);
+}
+
+
+/*Start Details Section*/
+.personal-info strong{ color: #c1c7cd; display: inline-block; width: auto; margin-right: 5px}
+.personal-info .info{ margin-left: 20px}
+.personal-info li{line-height: 1.7}
+.personal-info p,
+.personal-info li{color: #afafaf}
+.personal-info h2{color: #c1c7cd;}
+ 
+/*========================*/
+
+/*Start contact  Section*/
+.contact-info{
+    margin-left: 20px;
+}
+.contact-info p{
+    display: inline-block;
+    margin-left: 10px
+}
+.personal-info i{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #337ab7;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    background: #FFF;
+}
+
+.contact-info .social a{
+    text-decoration: none;
+
+}
+.contact-info .social i{
+    font-size: 30px; margin-right: 5px; transition: all .5s ease; color: #999; border: none; background: none
+}
+.contact-info .social .facebook:hover{
+    color: #4267b2;
+}
+.contact-info .social .twitter:hover{
+    color: #1da1f2
+}
+.contact-info .social .linkedin:hover{
+    color: #01649b
+}
+.contact-info .social .github:hover{
+    color: #000
+}
+
+
+.education p{
+    margin-left: 20px
+}
+/*============================*/
+
+/*===Start Graduation Project Section===*/
+hr.grad{ 
+    background: #e2e2e2;
+    width: 74%;
+}
+
+.grad-proj > h3{
+    
+    color: #337ab7;
+    font-weight: bold;
+    word-spacing: 1px;
+    font-size: 15px;
+}
+
+.grad-proj  a{
+    
+    background: #478bd4;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: 1px solid #478bd4;
+    margin: 20px 10px 20px 0;
+    transition: all .3s ease
+}
+
+.grad-proj a:hover {
+    outline: none;
+    color: #afafaf;
+    background: none;
+}
+
+/*===End Graduation Project Section===*/
+
+/*= Start CV Body =*/
+
+.cv-body{
+    display: block;
+    max-width: 100%;
+    background: #f7f7f7;
+}
+.cv-body section{padding: 10px 50px; }
+.cv-body .profile h3{
+    margin-bottom: 50px
+}
+.cv-body h2{letter-spacing: 10px; text-transform:uppercase;margin-bottom: 20px}
+.cv-body  p{width: 60%; color: #a09e9e; }
+.cv-body  p.lead{font-size: 18px}
+
+.progress { height: 5px; /*width: 30%;*/ background-color: #eaeaea;}
+.cv-body strong{ color: #478bd4; display: inline-block;}
+.cv-body  li{font-size: 16px; line-height: 1.7; color:#a09e9e }
+
+/*===============================*/
+
+/*= Start portfolio  =*/
+.portfolio button{
+    padding: 10px 15px;
+    margin-right: 10px;
+    background: none;
+    color: #afafaf;
+    border: 1px solid #478bd4;
+    margin: 20px 10px 20px 0
+}
+
+.portfolio button:focus{outline: none}
+
+.portfolio button.active{
+    background: #478bd4;
+    color: #FFF
+}
+
+.portfolio .row>div {padding: 0}
+
+figure.effect-sadie{cursor: default}
+figure.effect-sadie a{
+    float: right;
+    display: block;
+    margin-bottom: -21px;
+    width: 50px;
+    height: 50px;
+    margin-right: -24px;
+    display: inline-block;
+}
+figure.effect-sadie:hover a:first-child i {
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    border-radius: 50%;
+    background: none;
+    transition: all .4s ease-out;
+    
+}
+figure.effect-sadie:hover a:first-child:hover i{
+  color: #f9a918;
+}
+.grid figure h2{
+    margin: 0;
+    background: #140808a8;
+    margin-left: 15px;
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+}
+/*===============================*/
+
+/*==== Start Footer ====*/
+
+.footer {background: #173147}
+.footer .content{
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #adacac;
+    margin: auto
+}
+/*===============================*/
+
+
+
+/*--=======  Start Button scroll top ==========-*/
+
+#scroll-top{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    padding: 5px 5px 8px;
+    text-align: center;
+    background: #234460;
+    color: #FFF;
+    border-radius: 4px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer
+}
+
+/*--=======  End Button scroll top ==========-*/
